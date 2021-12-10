@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-373382553796245608
+=======
+--- !u!114 &11400000
+>>>>>>> 0eba841de56e1037dfc59119fec4a5aefe1bd4c2
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,12 +13,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 5417974887438294250}
   m_InitManagerOnStart: 1
 --- !u!114 &11400000
+=======
+  m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
+  m_Name: XRGeneralSettings
+  m_EditorClassIdentifier: 
+  Keys: 01000000
+  Values:
+  - {fileID: 4211446685733862337}
+--- !u!114 &4211446685733862337
+>>>>>>> 0eba841de56e1037dfc59119fec4a5aefe1bd4c2
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,6 +37,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettings
   m_EditorClassIdentifier: 
@@ -30,6 +45,14 @@ MonoBehaviour:
   Values:
   - {fileID: -373382553796245608}
 --- !u!114 &5417974887438294250
+=======
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: Standalone Settings
+  m_EditorClassIdentifier: 
+  m_LoaderManagerInstance: {fileID: 4283097691480759880}
+  m_InitManagerOnStart: 1
+--- !u!114 &4283097691480759880
+>>>>>>> 0eba841de56e1037dfc59119fec4a5aefe1bd4c2
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,4 +68,8 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders:
+<<<<<<< HEAD
   - {fileID: 11400000, guid: c6568f96e06b39144bc5dd67a3ba7a97, type: 2}
+=======
+  - {fileID: 11400000, guid: 4e14ee39a36da6345845535ac2908120, type: 2}
+>>>>>>> 0eba841de56e1037dfc59119fec4a5aefe1bd4c2
