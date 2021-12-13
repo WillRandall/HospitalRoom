@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!114 &-7939581308936595390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,6 +18,9 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders: []
 --- !u!114 &-4035725736716944877
+=======
+--- !u!114 &-6420712202442342972
+>>>>>>> 11002a1f0a0d91d4a0c4b0971ae50b8b3ff4a93f
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -25,11 +29,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
   m_Name: Standalone Settings
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 6373114678728908386}
   m_InitManagerOnStart: 1
+=======
+  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
+  m_Name: Standalone Providers
+  m_EditorClassIdentifier: 
+  m_RequiresSettingsUpdate: 0
+  m_AutomaticLoading: 0
+  m_AutomaticRunning: 0
+  m_Loaders: []
+>>>>>>> 11002a1f0a0d91d4a0c4b0971ae50b8b3ff4a93f
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +58,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Keys: 0100000004000000
   Values:
+<<<<<<< HEAD
   - {fileID: -4035725736716944877}
   - {fileID: 4762179232937850775}
 --- !u!114 &4762179232937850775
@@ -61,6 +76,10 @@ MonoBehaviour:
   m_LoaderManagerInstance: {fileID: -7939581308936595390}
   m_InitManagerOnStart: 1
 --- !u!114 &6373114678728908386
+=======
+  - {fileID: 6521100430984413816}
+--- !u!114 &6521100430984413816
+>>>>>>> 11002a1f0a0d91d4a0c4b0971ae50b8b3ff4a93f
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,10 +88,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4c3631f5e58749a59194e0cf6baf6d5, type: 3}
-  m_Name: Standalone Providers
+  m_Script: {fileID: 11500000, guid: d236b7d11115f2143951f1e14045df39, type: 3}
+  m_Name: Standalone Settings
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders: []
+=======
+  m_LoaderManagerInstance: {fileID: -6420712202442342972}
+  m_InitManagerOnStart: 1
+>>>>>>> 11002a1f0a0d91d4a0c4b0971ae50b8b3ff4a93f
