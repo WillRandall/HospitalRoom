@@ -105,6 +105,8 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+<<<<<<< HEAD
+=======
     "com.unity.xr.core-utils": {
       "version": "2.0.0-pre.5",
       "depth": 1,
@@ -129,6 +131,7 @@
       },
       "url": "https://packages.unity.com"
     },
+>>>>>>> 0eba841de56e1037dfc59119fec4a5aefe1bd4c2
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.8",
       "depth": 1,
@@ -162,6 +165,8 @@
       },
       "url": "https://packages.unity.com"
     },
+<<<<<<< HEAD
+=======
     "com.unity.xr.openxr": {
       "version": "1.2.8",
       "depth": 0,
@@ -173,6 +178,7 @@
       },
       "url": "https://packages.unity.com"
     },
+>>>>>>> 0eba841de56e1037dfc59119fec4a5aefe1bd4c2
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
