@@ -18,7 +18,7 @@ public class DialougeManager1 : MonoBehaviour
 
     private Story currentStory;
 
-    private bool dialougeIsPlaying { get; private set; }
+    public bool dialougeIsPlaying { get; private set; }
 
 
     private static DialougeManager1 instance;
