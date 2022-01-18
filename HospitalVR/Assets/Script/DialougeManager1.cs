@@ -18,7 +18,7 @@ public class DialougeManager1 : MonoBehaviour
 
     private Story currentStory;
 
-    private bool dialougeIsPlaying { get; private set; }
+    public bool dialougeIsPlaying { get; private set; }
 
 
     private static DialougeManager1 instance;
@@ -53,7 +53,7 @@ public class DialougeManager1 : MonoBehaviour
         }
 
         //Move to next line of Dialouge when submit is pressed 
-        if (InputManager.GetInstance().GetSubmitPressed())
+        if (XRIDefaultInputActions.GetInstance().triggerPressed())
         {
             ContinueStory();
         }

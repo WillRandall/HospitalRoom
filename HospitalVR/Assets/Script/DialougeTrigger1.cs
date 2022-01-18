@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+
 
 public class DialougeTrigger1 : MonoBehaviour
 {
@@ -23,7 +25,8 @@ public class DialougeTrigger1 : MonoBehaviour
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
             visualCue.SetActive(true);
-            if (InputManager.GetInstance().GetInteractPressed())
+            if (XRIDefaultInputActions.GetInstance().primaryButton.Pressed())
+
             {
                 DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
             }
