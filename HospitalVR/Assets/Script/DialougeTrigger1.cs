@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
+
+
+
 
 
 public class DialougeTrigger1 : MonoBehaviour
 {
+
     [Header("Visual Cue")]
     [SerializeField] private GameObject visualCue;
 
@@ -16,6 +19,8 @@ public class DialougeTrigger1 : MonoBehaviour
 
     private void Awake()
     {
+ 
+
         playerInRange = false;
         visualCue.SetActive(false);
     }
@@ -25,7 +30,7 @@ public class DialougeTrigger1 : MonoBehaviour
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
             visualCue.SetActive(true);
-            if (XRIDefaultInputActions.GetInstance().primaryButton.Pressed())
+            if (InputManager.GetInstance().Button.Start.Pressed())
 
             {
                 DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
@@ -34,6 +39,7 @@ public class DialougeTrigger1 : MonoBehaviour
         else
         {
             visualCue.SetActive(false);
+            
         }
     }
 
