@@ -30,11 +30,11 @@ public class DialougeTrigger1 : MonoBehaviour
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
             visualCue.SetActive(true);
-            if (InputManager.GetInstance().Button.Start.Pressed())
+            //if (InputManager.GetInstance().Button.Start.Pressed())
 
-            {
-                DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
-            }
+            //{
+            //    DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
+            //}
         }
         else
         {

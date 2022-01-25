@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Ink.Runtime;
+using UnityEngine.InputSystem;
 
 
 public class DialougeManager1 : MonoBehaviour
@@ -53,11 +54,20 @@ public class DialougeManager1 : MonoBehaviour
         }
 
         //Move to next line of Dialouge when submit is pressed 
-        if (XRIDefaultInputActions.GetInstance().triggerPressed())
-        {
-            ContinueStory();
-        }
+        //if (XRIDefaultInputActions.GetInstance().triggerPressed())
+        //{
+        //    ContinueStory();
+        //}
 
+    }
+
+    public void Next(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Debug.Log(context);
+        }
+        
     }
 
 

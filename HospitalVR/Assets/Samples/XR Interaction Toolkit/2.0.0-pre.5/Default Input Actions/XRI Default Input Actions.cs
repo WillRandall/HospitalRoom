@@ -1214,11 +1214,6 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIRightHand_TranslateAnchor = m_XRIRightHand.FindAction("Translate Anchor", throwIfNotFound: true);
     }
 
-    internal static object GetInstance()
-    {
-        throw new NotImplementedException();
-    }
-
     public void Dispose()
     {
         UnityEngine.Object.Destroy(asset);

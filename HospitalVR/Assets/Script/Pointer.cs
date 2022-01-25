@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pointer : MonoBehaviour
 {
     public float m_DefualtLength = 5.0f;
-    public GameObject m_Dot;
+    //public GameObject m_Dot;
     public VRInputModule m_InputModule;
 
     private LineRenderer m_lineRenderer = null;
@@ -35,7 +35,7 @@ public class Pointer : MonoBehaviour
             endPosition = hit.point;
 
         //Set postion of Dot
-        m_Dot.transform.position = endPosition;
+        //m_Dot.transform.position = endPosition;
 
         // Set Linerender
         m_lineRenderer.SetPosition(0, transform.position);
