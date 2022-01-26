@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Ink.Runtime;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 
 public class DialougeManager1 : MonoBehaviour
@@ -15,6 +16,11 @@ public class DialougeManager1 : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI dialougeText;
 
+
+    [Header("Choices UI")]
+    [SerializeField] private GameObject[] choices;
+
+    private TextMeshProUGUI[] choicesText;
 
 
     private Story currentStory;
@@ -43,7 +49,18 @@ public class DialougeManager1 : MonoBehaviour
     {
         dialougeIsPlaying = false;
         dialougePanel.SetActive(false);
+
+        // get all of the choices text
+        choicesText = new TextMeshProUGUI[choices.Length];
+        int index = 0;
+        foreach (GameObject choice in choices)
+        {
+            choicesText[index] = choice.GetComponentInChildren<TextMeshProUGUI>();
+            index++;
+        }
     }
+
+
 
     private void Update()
     {
@@ -59,15 +76,6 @@ public class DialougeManager1 : MonoBehaviour
         //    ContinueStory();
         //}
 
-    }
-
-    public void Next(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            Debug.Log(context);
-        }
-        
     }
 
 
@@ -90,12 +98,56 @@ public class DialougeManager1 : MonoBehaviour
     {
         if (currentStory.canContinue)
         {
+            //set text for current dialouge line
             dialougeText.text = currentStory.Continue();
+            //display choices, if any, for this dialouge line
+            DisplayChoices();
         }
         else
         {
             ExitDialougeMode();
         }
     }
+
+    private void DisplayChoices()
+    {
+        List<Choice> currentChoices = currentStory.currentChoices;
+
+        // Check to make sure UI can support the number of choices coming in
+        if (currentChoices.Count > choices.Length)
+        {
+            Debug.LogError("More choices were given then UI can support. Number of choices given: " + currentChoices.Count);
+        }
+
+        int index = 0;
+        //enable and initalize the choices up to the amount of choices for this Line of dialouge
+        foreach(Choice choice in currentChoices)
+        {
+            choices[index].gameObject.SetActive(true);
+            choicesText[index].text = choice.text;
+            index++;
+        }
+        //go through the remaining choices the UI supports and make sure they're hidden
+        for(int i = index; i < choices.Length; i++)
+        {
+            choices[i].gameObject.SetActive(false);
+        }
+        StartCoroutine(SelectFirstChoice());
+    }
+
+    private IEnumerator SelectFirstChoice()
+    {
+        // Event system requires we clear it first, then wait
+        // for at least one frame before we set the current selected object.
+        EventSystem.current.SetSelectedGameObject(null);
+        yield return new WaitForEndOfFrame();
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+    }
+
+    public void MakeChoice(int choiceIndex)
+    {
+        currentStory.ChooseChoiceIndex(choiceIndex);
+    }
+
 
 }
