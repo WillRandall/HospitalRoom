@@ -458,6 +458,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ContiuneStory",
+                    "type": "Button",
+                    "id": "ec67627a-6a98-4ec4-8e66-17a47d42e129",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -634,6 +643,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SecondaryTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "26fb5d54-9437-40c0-a05a-6a424a9757cd",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ContiuneStory",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
