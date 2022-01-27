@@ -78,20 +78,16 @@ public class DialougeManager1 : MonoBehaviour
         }
 
         //Move to next line of Dialouge when submit is pressed 
-        if (XRIDefaultInputActions.GetInstance().triggerPressed())
-        {
-            ContinueStory();
-        }
+        //if (XRIDefaultInputActions.GetInstance().triggerPressed())
+        //{
+        //    ContinueStory();
+        //}
 
     }
 
     public void Right(InputAction.CallbackContext context)
     {
         Debug.Log(context);
-        //if (context = performed)
-        //{
-        //    start = true;
-        //}
     }
 
     public void Left(InputAction.CallbackContext context)
