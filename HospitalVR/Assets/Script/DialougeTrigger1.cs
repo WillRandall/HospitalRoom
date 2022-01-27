@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using UnityEngine.InputSystem;
 
 
 
@@ -15,26 +14,47 @@ public class DialougeTrigger1 : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
+    private PlayerInput playerInput;
+    private bool start = false;
+
     private bool playerInRange;
 
-    private void Awake()
+    public void Awake()
     {
  
-
         playerInRange = false;
         visualCue.SetActive(false);
+
+        playerInput = GetComponent<PlayerInput>();
+
+        PlayerInputActions playerInputActions = new PlayerInputActions();
+        playerInputActions.Player.Enable();
+        playerInputActions.Player.Start.performed += Start;
+
+        
     }
 
-    private void Update()
+    public void Start(InputAction.CallbackContext context)
+    {
+        //Debug.Log(context);
+        if (context.performed)
+        {
+            start = true;
+            Debug.Log(start);
+        }
+    }
+
+
+    public void Update()
     {
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
             visualCue.SetActive(true);
-            //if (InputManager.GetInstance().Button.Start.Pressed())
+            if (start = true)
 
-            //{
-            //    DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
-            //}
+            {
+                DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
+            }
         }
         else
         {

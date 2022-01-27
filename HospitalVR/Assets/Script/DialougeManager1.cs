@@ -21,7 +21,7 @@ public class DialougeManager1 : MonoBehaviour
     [SerializeField] private GameObject[] choices;
 
     private TextMeshProUGUI[] choicesText;
-
+    private PlayerInput playerInput;
 
     private Story currentStory;
 
@@ -37,6 +37,13 @@ public class DialougeManager1 : MonoBehaviour
             Debug.LogWarning("Found more than one Dialouge Manager in scene");
         }
         instance = this;
+
+        playerInput = GetComponent<PlayerInput>();
+
+        PlayerInputActions playerInputActions = new PlayerInputActions();
+        playerInputActions.Player.Enable();
+        playerInputActions.Player.Right.performed += Right;
+        playerInputActions.Player.Left.performed += Left;
     }
 
     public static DialougeManager1 GetInstance()
@@ -76,6 +83,20 @@ public class DialougeManager1 : MonoBehaviour
         //    ContinueStory();
         //}
 
+    }
+
+    public void Right(InputAction.CallbackContext context)
+    {
+        Debug.Log(context);
+        //if (context = performed)
+        //{
+        //    start = true;
+        //}
+    }
+
+    public void Left(InputAction.CallbackContext context)
+    {
+        Debug.Log(context);
     }
 
 
