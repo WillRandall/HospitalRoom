@@ -5,8 +5,5 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     
-    public void Next()
-    {
-        Debug.Log("Next");
-    }
+    
 }
