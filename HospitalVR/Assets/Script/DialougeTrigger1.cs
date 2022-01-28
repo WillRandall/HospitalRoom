@@ -14,7 +14,10 @@ public class DialougeTrigger1 : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
-    private PlayerInput playerInput;
+    //TESTING this script to put in Trigger and manager
+  [SerializeField] private InputActionReference contiuneStoryActionRefrence;
+
+    
     private bool start = false;
 
     private bool playerInRange;
@@ -24,24 +27,15 @@ public class DialougeTrigger1 : MonoBehaviour
  
         playerInRange = false;
         visualCue.SetActive(false);
-
-        playerInput = GetComponent<PlayerInput>();
-
-        PlayerInputActions playerInputActions = new PlayerInputActions();
-        playerInputActions.Player.Enable();
-        playerInputActions.Player.Start.performed += Start;
+        
 
         
     }
 
-    public void Start(InputAction.CallbackContext context)
+    void Start()
     {
-        //Debug.Log(context);
-        if (context.performed)
-        {
-            start = true;
-            Debug.Log(start);
-        }
+        //part of Test Script
+        contiuneStoryActionRefrence.action.performed += OnContiune;
     }
 
 
@@ -50,7 +44,7 @@ public class DialougeTrigger1 : MonoBehaviour
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
             visualCue.SetActive(true);
-            if (start = true)
+           
 
             {
                 DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
@@ -60,6 +54,24 @@ public class DialougeTrigger1 : MonoBehaviour
         {
             visualCue.SetActive(false);
             
+        }
+    }
+
+    private void OnContiune(InputAction.CallbackContext obj)
+    {
+        if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
+        {
+            visualCue.SetActive(true);
+
+
+            {
+                DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
+            }
+        }
+        else
+        {
+            visualCue.SetActive(false);
+
         }
     }
 

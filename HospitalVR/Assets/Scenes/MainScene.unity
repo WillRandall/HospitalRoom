@@ -4818,7 +4818,7 @@ MonoBehaviour:
   m_ActionsAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_PointAction: {fileID: 0}
   m_MoveAction: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  m_SubmitAction: {fileID: 3279264004350380116, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_SubmitAction: {fileID: 5919205476901874428, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_CancelAction: {fileID: 0}
   m_LeftClickAction: {fileID: 0}
   m_MiddleClickAction: {fileID: 0}
@@ -5069,6 +5069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contiuneStoryActionRefrence: {fileID: 0}
+  inkJSON: {fileID: 0}
 --- !u!1 &988515997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5586,7 +5587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097302039}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.49338728, y: -1.736, z: 0.87933445}
+  m_LocalPosition: {x: -0.49338728, y: -2.316, z: 0.654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1532176637}
@@ -5688,6 +5689,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169430307}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1211254573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 6ebe6c96b4e234c45a329026a65303d4, type: 3}
+  m_PrefabInstance: {fileID: 2002705390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1238228285
 GameObject:
   m_ObjectHideFlags: 0
@@ -7014,8 +7020,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4027d921de8bfaa4bac1fbdc22d49d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
+  visualCue: {fileID: 1211254573}
   inkJSON: {fileID: 4900000, guid: 606d221e9d0acd54b8623da2cf8171a8, type: 3}
+  contiuneStoryActionRefrence: {fileID: 0}
 --- !u!1 &2034938912
 GameObject:
   m_ObjectHideFlags: 0

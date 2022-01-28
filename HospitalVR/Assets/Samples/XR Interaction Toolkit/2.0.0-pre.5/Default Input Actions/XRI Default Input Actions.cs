@@ -751,6 +751,15 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""ContiuneStory"",
+                    ""type"": ""Button"",
+                    ""id"": ""a3de34da-32a8-46c3-bd49-57c0c5a93cfd"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1105,6 +1114,17 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""action"": ""UI Press Value"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac2781e2-bbc5-4658-81d3-02304ae49da1"",
+                    ""path"": ""<XRController>{RightHand}/primaryTouched"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ContiuneStory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1212,6 +1232,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIRightHand_Move = m_XRIRightHand.FindAction("Move", throwIfNotFound: true);
         m_XRIRightHand_RotateAnchor = m_XRIRightHand.FindAction("Rotate Anchor", throwIfNotFound: true);
         m_XRIRightHand_TranslateAnchor = m_XRIRightHand.FindAction("Translate Anchor", throwIfNotFound: true);
+        m_XRIRightHand_ContiuneStory = m_XRIRightHand.FindAction("ContiuneStory", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1490,6 +1511,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
     private readonly InputAction m_XRIRightHand_Move;
     private readonly InputAction m_XRIRightHand_RotateAnchor;
     private readonly InputAction m_XRIRightHand_TranslateAnchor;
+    private readonly InputAction m_XRIRightHand_ContiuneStory;
     public struct XRIRightHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -1511,6 +1533,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         public InputAction @Move => m_Wrapper.m_XRIRightHand_Move;
         public InputAction @RotateAnchor => m_Wrapper.m_XRIRightHand_RotateAnchor;
         public InputAction @TranslateAnchor => m_Wrapper.m_XRIRightHand_TranslateAnchor;
+        public InputAction @ContiuneStory => m_Wrapper.m_XRIRightHand_ContiuneStory;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1571,6 +1594,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TranslateAnchor.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
                 @TranslateAnchor.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
                 @TranslateAnchor.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
+                @ContiuneStory.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnContiuneStory;
+                @ContiuneStory.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnContiuneStory;
+                @ContiuneStory.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnContiuneStory;
             }
             m_Wrapper.m_XRIRightHandActionsCallbackInterface = instance;
             if (instance != null)
@@ -1626,6 +1652,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TranslateAnchor.started += instance.OnTranslateAnchor;
                 @TranslateAnchor.performed += instance.OnTranslateAnchor;
                 @TranslateAnchor.canceled += instance.OnTranslateAnchor;
+                @ContiuneStory.started += instance.OnContiuneStory;
+                @ContiuneStory.performed += instance.OnContiuneStory;
+                @ContiuneStory.canceled += instance.OnContiuneStory;
             }
         }
     }
@@ -1701,5 +1730,6 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         void OnMove(InputAction.CallbackContext context);
         void OnRotateAnchor(InputAction.CallbackContext context);
         void OnTranslateAnchor(InputAction.CallbackContext context);
+        void OnContiuneStory(InputAction.CallbackContext context);
     }
 }
