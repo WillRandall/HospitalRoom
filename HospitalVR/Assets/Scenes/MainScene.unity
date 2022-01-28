@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43670058, g: 0.48430055, b: 0.5645522, a: 1}
+  m_IndirectSpecularColor: {r: 0.43670067, g: 0.4843005, b: 0.5645526, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5005,7 +5005,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 988042364}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialougeManager1, Assembly-CSharp
         m_MethodName: Right
         m_Mode: 0
@@ -5021,7 +5021,7 @@ MonoBehaviour:
     m_ActionName: Player/Next
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 988042364}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialougeManager1, Assembly-CSharp
         m_MethodName: Left
         m_Mode: 0
@@ -5037,7 +5037,7 @@ MonoBehaviour:
     m_ActionName: Player/New action
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 988042365}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialougeTrigger1, Assembly-CSharp
         m_MethodName: Start
         m_Mode: 0
@@ -5068,35 +5068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d795cdf9ed9cda0499601a7f4451a22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &988042364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5d7f89c52774b4597060627230e9e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougePanel: {fileID: 726314033}
-  dialougeText: {fileID: 170087877}
-  choices: []
---- !u!114 &988042365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4027d921de8bfaa4bac1fbdc22d49d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visualCue: {fileID: 0}
-  inkJSON: {fileID: 0}
+  contiuneStoryActionRefrence: {fileID: 0}
 --- !u!1 &988515997
 GameObject:
   m_ObjectHideFlags: 0
@@ -6411,7 +6383,6 @@ PrefabInstance:
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.217
-      value: 2.097
       objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6947,6 +6918,7 @@ GameObject:
   - component: {fileID: 2015495395}
   - component: {fileID: 2015495394}
   - component: {fileID: 2015495393}
+  - component: {fileID: 2015495397}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -6965,8 +6937,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 3.176977
+  m_Center: {x: -0.90455556, y: 0, z: 0.29986143}
 --- !u!23 &2015495394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7024,12 +6996,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015495392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.108, y: 0.81, z: -0.667}
+  m_LocalPosition: {x: 0.3, y: 0.81, z: 0.186}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2015495397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015495392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4027d921de8bfaa4bac1fbdc22d49d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualCue: {fileID: 0}
+  inkJSON: {fileID: 4900000, guid: 606d221e9d0acd54b8623da2cf8171a8, type: 3}
 --- !u!1 &2034938912
 GameObject:
   m_ObjectHideFlags: 0

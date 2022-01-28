@@ -78,7 +78,7 @@ public class DialougeManager1 : MonoBehaviour
         }
 
         //Move to next line of Dialouge when submit is pressed 
-        if (XRIDefaultInputActions.GetInstance().triggerPressed())
+        //if (XRIDefaultInputActions.GetInstance().triggerPressed())
         {
             ContinueStory();
         }
