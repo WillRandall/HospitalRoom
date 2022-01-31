@@ -730,7 +730,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -370.2461, y: -12.296051, z: -366.56036, w: -13.175747}
+  m_margin: {x: -370.2461, y: -12.296051, z: -456.883, w: -123.83089}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5036,23 +5036,7 @@ MonoBehaviour:
     m_ActionId: 1f3d8bbb-549e-44c1-8aa4-7c7f82cde5c0
     m_ActionName: Player/New action
   - m_PersistentCalls:
-      m_Calls:
-
-      - m_Target: {fileID: 0}
-
-      - m_Target: {fileID: 2015495397}
-        982074bed135648322095659d344faa9ba1481d6
-        m_TargetAssemblyTypeName: DialougeTrigger1, Assembly-CSharp
-        m_MethodName: Start
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: b4917d65-980c-4dbc-813c-d706e7f07c95
     m_ActionName: Player/Start[/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
@@ -5072,8 +5056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d795cdf9ed9cda0499601a7f4451a22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contiuneStoryActionRefrence: {fileID: 0}
-  inkJSON: {fileID: 0}
+  contiuneStoryActionRefrence: {fileID: 3111508289439498228, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!114 &988042364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6944,7 +6927,6 @@ GameObject:
   - component: {fileID: 2015495394}
   - component: {fileID: 2015495393}
   - component: {fileID: 2015495397}
-  - component: {fileID: 2015495398}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -6965,8 +6947,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3.176977
   m_Center: {x: -0.90455556, y: 0, z: 0.29986143}
-  m_Radius: 4.091347
-  m_Center: {x: -1.8085599, y: 0, z: 0}
 --- !u!23 &2015495394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7044,24 +7024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1211254573}
   inkJSON: {fileID: 4900000, guid: 606d221e9d0acd54b8623da2cf8171a8, type: 3}
-  contiuneStoryActionRefrence: {fileID: 0}
-  visualCue: {fileID: 0}
-  inkJSON: {fileID: 4900000, guid: e29c554ae38c0a74f92b4beaefd34b86, type: 3}
---- !u!114 &2015495398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015495392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5d7f89c52774b4597060627230e9e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougePanel: {fileID: 0}
-  dialougeText: {fileID: 0}
-  choices: []
+  contiuneStoryActionRefrence: {fileID: 3111508289439498228, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!1 &2034938912
 GameObject:
   m_ObjectHideFlags: 0
