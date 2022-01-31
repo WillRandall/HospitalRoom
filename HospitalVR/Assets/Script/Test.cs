@@ -9,12 +9,12 @@ public class Test : MonoBehaviour
     //TESTING this script to put in Trigger and manager
   [SerializeField] private InputActionReference contiuneStoryActionRefrence;
 
-    [Header("Ink JSON")]
-    [SerializeField] private TextAsset inkJSON;
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        //part of Test Script
         contiuneStoryActionRefrence.action.performed += OnContiune;
     }
 
@@ -26,7 +26,7 @@ public class Test : MonoBehaviour
 
     private void OnContiune(InputAction.CallbackContext obj)
     {
-        DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
+        
     }
 
 }
