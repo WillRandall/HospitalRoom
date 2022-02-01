@@ -1052,7 +1052,7 @@ Transform:
   m_Children:
   - {fileID: 1856596237}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294336146
 GameObject:
@@ -3962,7 +3962,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
       propertyPath: m_LocalScale.x
@@ -5047,109 +5047,6 @@ Transform:
   m_Father: {fileID: 1454436094}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &988042358 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4581978257652492988, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
-  m_PrefabInstance: {fileID: 1622940450}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &988042360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 575afacda709ebf4fbc9c6bf412c1803, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialougeManager1, Assembly-CSharp
-        m_MethodName: Right
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 934ba1e0-6d33-4093-a34d-b57d769c1502
-    m_ActionName: Player/Next
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialougeManager1, Assembly-CSharp
-        m_MethodName: Left
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 1f3d8bbb-549e-44c1-8aa4-7c7f82cde5c0
-    m_ActionName: Player/New action
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 
-    m_ActionName: 
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 
-    m_ActionName: 
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: 
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &988042363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d795cdf9ed9cda0499601a7f4451a22d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contiuneStoryActionRefrence: {fileID: 0}
---- !u!114 &988042364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5d7f89c52774b4597060627230e9e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougePanel: {fileID: 726314033}
-  dialougeText: {fileID: 170087877}
-  choices: []
 --- !u!1 &988515997
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,13 +5996,17 @@ PrefabInstance:
       propertyPath: dialougePanel
       value: 
       objectReference: {fileID: 726314033}
+    - target: {fileID: 317231814491641270, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: contiuneStoryActionRefrence
+      value: 
+      objectReference: {fileID: -1047477122185746169, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.046
+      value: -0.081
       objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6113,7 +6014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.87933445
+      value: -3.55
       objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6147,6 +6048,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 7727610021980907818, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: dialougeText
+      value: 
+      objectReference: {fileID: 170087877}
+    - target: {fileID: 7727610021980907818, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: dialougePanel
+      value: 
+      objectReference: {fileID: 726314033}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
 --- !u!20 &1622940452 stripped
@@ -6735,22 +6644,6 @@ MonoBehaviour:
   visualCue: {fileID: 1211254573}
   inkJSON: {fileID: 4900000, guid: 606d221e9d0acd54b8623da2cf8171a8, type: 3}
   contiuneStoryActionRefrence: {fileID: 3111508289439498228, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
-  contiuneStoryActionRefrence: {fileID: 0}
---- !u!114 &2015495398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2015495392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5d7f89c52774b4597060627230e9e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougePanel: {fileID: 0}
-  dialougeText: {fileID: 0}
-  choices: []
 --- !u!1 &2034938912
 GameObject:
   m_ObjectHideFlags: 0
