@@ -20,6 +20,8 @@ public class DialougeManager1 : MonoBehaviour
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
 
+
+
     private TextMeshProUGUI[] choicesText;
     private PlayerInput playerInput;
 
@@ -108,7 +110,10 @@ public class DialougeManager1 : MonoBehaviour
         dialougeIsPlaying = true;
         dialougePanel.SetActive(true);
 
-        ContinueStory();
+        if (currentStory.canContinue)
+        {
+            dialougeText.text = currentStory.Continue();
+        }
     }
     private void ExitDialougeMode()
     {
