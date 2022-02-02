@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43670067, g: 0.4843005, b: 0.5645526, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1209,13 +1209,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336007677}
-  m_LocalRotation: {x: 0.78411365, y: -0, z: -0, w: 0.6206173}
-  m_LocalPosition: {x: -322.16, y: -147.54, z: 32.01}
+  m_LocalRotation: {x: 0.9677813, y: -0, z: -0, w: 0.25179228}
+  m_LocalPosition: {x: -322.16, y: -159.11, z: 29.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2064296082}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 103.278015, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 150.83301, y: 0, z: 0}
 --- !u!108 &336007679
 Light:
   m_ObjectHideFlags: 0
@@ -1227,11 +1227,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7075472, g: 0, b: 0.67126346, a: 1}
   m_Intensity: 0.5
   m_Range: 1000
-  m_SpotAngle: 90
-  m_InnerSpotAngle: 9
+  m_SpotAngle: 19.8
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -5235,109 +5235,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985801236}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &988042358 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4581978257652492988, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
-  m_PrefabInstance: {fileID: 1622940450}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &988042360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 575afacda709ebf4fbc9c6bf412c1803, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialougeManager1, Assembly-CSharp
-        m_MethodName: Right
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 934ba1e0-6d33-4093-a34d-b57d769c1502
-    m_ActionName: Player/Next
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DialougeManager1, Assembly-CSharp
-        m_MethodName: Left
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 1f3d8bbb-549e-44c1-8aa4-7c7f82cde5c0
-    m_ActionName: Player/New action
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 
-    m_ActionName: 
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 
-    m_ActionName: 
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: 
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
---- !u!114 &988042363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d795cdf9ed9cda0499601a7f4451a22d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contiuneStoryActionRefrence: {fileID: 0}
---- !u!114 &988042364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988042358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5d7f89c52774b4597060627230e9e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialougePanel: {fileID: 726314033}
-  dialougeText: {fileID: 170087877}
-  choices: []
 --- !u!1 &988515997
 GameObject:
   m_ObjectHideFlags: 0
@@ -5788,11 +5685,11 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238228285}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.5330188, g: 0.57586133, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
@@ -6308,7 +6205,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.5
-  m_Range: 100
+  m_Range: 5.79
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6349,7 +6246,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 2.1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -6365,7 +6262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565469355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -319.43634, y: -163.18973, z: 14.364837}
+  m_LocalPosition: {x: -322.634, y: -163.18973, z: 7.404}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2064296082}
@@ -6541,7 +6438,11 @@ PrefabInstance:
       propertyPath: dialougePanel
       value: 
       objectReference: {fileID: 726314033}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7727610021980907818, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+    - {fileID: 6680873117215526709, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+    - {fileID: 988042363, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+    - {fileID: 988042364, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
 --- !u!20 &1622940452 stripped
 Camera:

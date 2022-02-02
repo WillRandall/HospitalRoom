@@ -53,6 +53,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""NextStory"",
+                    ""type"": ""Button"",
+                    ""id"": ""9592e0ee-5add-4093-9d7a-4052cf472c97"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -88,6 +97,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""action"": ""Start"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9adee7fc-7960-4572-9628-572332b295f7"",
+                    ""path"": ""<OculusTouchController>/triggerPressed"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""NextStory"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -99,6 +119,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_Player_Right = m_Player.FindAction("Right", throwIfNotFound: true);
         m_Player_Left = m_Player.FindAction("Left", throwIfNotFound: true);
         m_Player_Start = m_Player.FindAction("Start", throwIfNotFound: true);
+        m_Player_NextStory = m_Player.FindAction("NextStory", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -161,6 +182,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Right;
     private readonly InputAction m_Player_Left;
     private readonly InputAction m_Player_Start;
+    private readonly InputAction m_Player_NextStory;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -168,6 +190,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @Right => m_Wrapper.m_Player_Right;
         public InputAction @Left => m_Wrapper.m_Player_Left;
         public InputAction @Start => m_Wrapper.m_Player_Start;
+        public InputAction @NextStory => m_Wrapper.m_Player_NextStory;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -186,6 +209,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Start.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStart;
                 @Start.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStart;
                 @Start.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnStart;
+                @NextStory.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextStory;
+                @NextStory.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextStory;
+                @NextStory.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNextStory;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -199,6 +225,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @Start.started += instance.OnStart;
                 @Start.performed += instance.OnStart;
                 @Start.canceled += instance.OnStart;
+                @NextStory.started += instance.OnNextStory;
+                @NextStory.performed += instance.OnNextStory;
+                @NextStory.canceled += instance.OnNextStory;
             }
         }
     }
@@ -208,5 +237,6 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnRight(InputAction.CallbackContext context);
         void OnLeft(InputAction.CallbackContext context);
         void OnStart(InputAction.CallbackContext context);
+        void OnNextStory(InputAction.CallbackContext context);
     }
 }

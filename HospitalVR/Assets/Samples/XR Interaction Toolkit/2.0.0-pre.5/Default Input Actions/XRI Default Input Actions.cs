@@ -1121,7 +1121,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""path"": ""<XRController>{RightHand}/primaryTouched"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Generic XR Controller"",
                     ""action"": ""ContiuneStory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
