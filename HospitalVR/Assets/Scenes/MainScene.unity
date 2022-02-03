@@ -5672,7 +5672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1238228286
 Light:
   m_ObjectHideFlags: 0
@@ -6365,11 +6365,43 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: 9592e0ee-5add-4093-9d7a-4052cf472c97
+      objectReference: {fileID: 0}
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: Player/New action
+      objectReference: {fileID: 0}
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: 4027d921de8bfaa4bac1fbdc22d49d82, type: 3}
+    - target: {fileID: 988042360, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+      propertyPath: m_DeviceLostEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+=======
     - target: {fileID: 988042364, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+>>>>>>> 9c1f750c8d1c8a6d554096063c5119e15e0f89a6
       propertyPath: dialougeText
       value: 
       objectReference: {fileID: 170087877}
-    - target: {fileID: 988042364, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
+    - target: {fileID: 0}
       propertyPath: dialougePanel
       value: 
       objectReference: {fileID: 726314033}
@@ -6421,10 +6453,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Rig
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+    - target: {fileID: 0}
+      propertyPath: dialougeText
+      value: 
+      objectReference: {fileID: 170087877}
+    - target: {fileID: 0}
+      propertyPath: dialougePanel
+      value: 
+      objectReference: {fileID: 726314033}
+=======
     - target: {fileID: 8817415634171497899, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
       propertyPath: m_RequestedTrackingMode
       value: 1
       objectReference: {fileID: 0}
+>>>>>>> 9c1f750c8d1c8a6d554096063c5119e15e0f89a6
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 013874b11515a2f4fb573bb33948a040, type: 3}
 --- !u!20 &1622940452 stripped

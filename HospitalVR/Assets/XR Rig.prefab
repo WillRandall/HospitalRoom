@@ -1719,7 +1719,10 @@ GameObject:
   - component: {fileID: 4581978257652492989}
   - component: {fileID: 988042360}
   - component: {fileID: 317231814491641270}
+<<<<<<< HEAD
+=======
   - component: {fileID: 988042364}
+>>>>>>> 9c1f750c8d1c8a6d554096063c5119e15e0f89a6
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Player
@@ -1836,10 +1839,13 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b4917d65-980c-4dbc-813c-d706e7f07c95
     m_ActionName: Player/Start[/Keyboard/space]
+<<<<<<< HEAD
+=======
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 9592e0ee-5add-4093-9d7a-4052cf472c97
     m_ActionName: Player/New action
+>>>>>>> 9c1f750c8d1c8a6d554096063c5119e15e0f89a6
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1857,6 +1863,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d795cdf9ed9cda0499601a7f4451a22d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+  contiuneStoryActionRefrence: {fileID: 0}
+=======
   contiuneStoryActionRefrence: {fileID: -1047477122185746169, guid: e0ca4504471ca124088e1e2cfe6804ae, type: 3}
 --- !u!114 &988042364
 MonoBehaviour:
@@ -1873,3 +1882,4 @@ MonoBehaviour:
   dialougePanel: {fileID: 0}
   dialougeText: {fileID: 0}
   choices: []
+>>>>>>> 9c1f750c8d1c8a6d554096063c5119e15e0f89a6
