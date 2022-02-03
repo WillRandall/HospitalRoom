@@ -56,7 +56,7 @@ public class DialougeTrigger1 : MonoBehaviour
             
         }
     }
-
+    //part of Test Script
     private void OnContiune(InputAction.CallbackContext obj)
     {
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
