@@ -731,9 +731,18 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "ContiuneStory",
+                    "name": "interact",
                     "type": "Button",
-                    "id": "a3de34da-32a8-46c3-bd49-57c0c5a93cfd",
+                    "id": "308f7cad-32e1-4e9c-9235-de2b4148b173",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "submit",
+                    "type": "Button",
+                    "id": "fdf5647c-9604-4f37-b6b4-83d9fd63400f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1095,12 +1104,23 @@
                 },
                 {
                     "name": "",
-                    "id": "ac2781e2-bbc5-4658-81d3-02304ae49da1",
-                    "path": "<XRController>{RightHand}/primaryTouched",
+                    "id": "0353d4a0-9325-49f3-bd25-9932f0df8dd4",
+                    "path": "<XRController>{RightHand}/primaryButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "ContiuneStory",
+                    "groups": "",
+                    "action": "interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34ec87db-6686-4dc7-8446-51f5c1ae1b03",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "submit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

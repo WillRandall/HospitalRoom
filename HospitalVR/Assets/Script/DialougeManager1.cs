@@ -40,12 +40,7 @@ public class DialougeManager1 : MonoBehaviour
         }
         instance = this;
 
-        playerInput = GetComponent<PlayerInput>();
-
-        PlayerInputActions playerInputActions = new PlayerInputActions();
-        playerInputActions.Player.Enable();
-        playerInputActions.Player.Right.performed += Right;
-        playerInputActions.Player.Left.performed += Left;
+        
     }
 
     public static DialougeManager1 GetInstance()
@@ -69,8 +64,6 @@ public class DialougeManager1 : MonoBehaviour
         }
     }
 
-
-
     private void Update()
     {
         //Return right away if Dialouge isnt playing
@@ -78,29 +71,13 @@ public class DialougeManager1 : MonoBehaviour
         {
             return;
         }
-
-        //Move to next line of Dialouge when submit is pressed 
-        //if (XRIDefaultInputActions.GetInstance().triggerPressed())
-
+        // Handle countinuing to the next line in the dialouge when submit is pressed
+        if (InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
 
-        //{
-        //    ContinueStory();
-        //}
 
-
-    }
-
-    public void Right(InputAction.CallbackContext context)
-    {
-        Debug.Log(context);
-    }
-
-    public void Left(InputAction.CallbackContext context)
-    {
-        Debug.Log(context);
     }
 
 
@@ -109,6 +86,9 @@ public class DialougeManager1 : MonoBehaviour
         currentStory = new Story(inkJSon.text);
         dialougeIsPlaying = true;
         dialougePanel.SetActive(true);
+
+        ContinueStory();
+
 
         if (currentStory.canContinue)
         {

@@ -753,9 +753,18 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""ContiuneStory"",
+                    ""name"": ""interact"",
                     ""type"": ""Button"",
-                    ""id"": ""a3de34da-32a8-46c3-bd49-57c0c5a93cfd"",
+                    ""id"": ""308f7cad-32e1-4e9c-9235-de2b4148b173"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""submit"",
+                    ""type"": ""Button"",
+                    ""id"": ""fdf5647c-9604-4f37-b6b4-83d9fd63400f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -1117,12 +1126,23 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 },
                 {
                     ""name"": """",
-                    ""id"": ""ac2781e2-bbc5-4658-81d3-02304ae49da1"",
-                    ""path"": ""<XRController>{RightHand}/primaryTouched"",
+                    ""id"": ""0353d4a0-9325-49f3-bd25-9932f0df8dd4"",
+                    ""path"": ""<XRController>{RightHand}/primaryButton"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Generic XR Controller"",
-                    ""action"": ""ContiuneStory"",
+                    ""groups"": """",
+                    ""action"": ""interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""34ec87db-6686-4dc7-8446-51f5c1ae1b03"",
+                    ""path"": ""<XRController>{RightHand}/secondaryButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""submit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1232,7 +1252,8 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIRightHand_Move = m_XRIRightHand.FindAction("Move", throwIfNotFound: true);
         m_XRIRightHand_RotateAnchor = m_XRIRightHand.FindAction("Rotate Anchor", throwIfNotFound: true);
         m_XRIRightHand_TranslateAnchor = m_XRIRightHand.FindAction("Translate Anchor", throwIfNotFound: true);
-        m_XRIRightHand_ContiuneStory = m_XRIRightHand.FindAction("ContiuneStory", throwIfNotFound: true);
+        m_XRIRightHand_interact = m_XRIRightHand.FindAction("interact", throwIfNotFound: true);
+        m_XRIRightHand_submit = m_XRIRightHand.FindAction("submit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1511,7 +1532,8 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
     private readonly InputAction m_XRIRightHand_Move;
     private readonly InputAction m_XRIRightHand_RotateAnchor;
     private readonly InputAction m_XRIRightHand_TranslateAnchor;
-    private readonly InputAction m_XRIRightHand_ContiuneStory;
+    private readonly InputAction m_XRIRightHand_interact;
+    private readonly InputAction m_XRIRightHand_submit;
     public struct XRIRightHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -1533,7 +1555,8 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         public InputAction @Move => m_Wrapper.m_XRIRightHand_Move;
         public InputAction @RotateAnchor => m_Wrapper.m_XRIRightHand_RotateAnchor;
         public InputAction @TranslateAnchor => m_Wrapper.m_XRIRightHand_TranslateAnchor;
-        public InputAction @ContiuneStory => m_Wrapper.m_XRIRightHand_ContiuneStory;
+        public InputAction @interact => m_Wrapper.m_XRIRightHand_interact;
+        public InputAction @submit => m_Wrapper.m_XRIRightHand_submit;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1594,9 +1617,12 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TranslateAnchor.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
                 @TranslateAnchor.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
                 @TranslateAnchor.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnTranslateAnchor;
-                @ContiuneStory.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnContiuneStory;
-                @ContiuneStory.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnContiuneStory;
-                @ContiuneStory.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnContiuneStory;
+                @interact.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnInteract;
+                @interact.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnInteract;
+                @interact.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnInteract;
+                @submit.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSubmit;
+                @submit.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSubmit;
+                @submit.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSubmit;
             }
             m_Wrapper.m_XRIRightHandActionsCallbackInterface = instance;
             if (instance != null)
@@ -1652,9 +1678,12 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @TranslateAnchor.started += instance.OnTranslateAnchor;
                 @TranslateAnchor.performed += instance.OnTranslateAnchor;
                 @TranslateAnchor.canceled += instance.OnTranslateAnchor;
-                @ContiuneStory.started += instance.OnContiuneStory;
-                @ContiuneStory.performed += instance.OnContiuneStory;
-                @ContiuneStory.canceled += instance.OnContiuneStory;
+                @interact.started += instance.OnInteract;
+                @interact.performed += instance.OnInteract;
+                @interact.canceled += instance.OnInteract;
+                @submit.started += instance.OnSubmit;
+                @submit.performed += instance.OnSubmit;
+                @submit.canceled += instance.OnSubmit;
             }
         }
     }
@@ -1730,6 +1759,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         void OnMove(InputAction.CallbackContext context);
         void OnRotateAnchor(InputAction.CallbackContext context);
         void OnTranslateAnchor(InputAction.CallbackContext context);
-        void OnContiuneStory(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
+        void OnSubmit(InputAction.CallbackContext context);
     }
 }

@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 4581978257652492962}
   - component: {fileID: 4581978257652492989}
   m_Layer: 0
-  m_Name: XR Rig
+  m_Name: XR Rig 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14,8 +14,7 @@ public class DialougeTrigger1 : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
-    //TESTING this script to put in Trigger and manager
-  [SerializeField] private InputActionReference contiuneStoryActionRefrence;
+    
 
     
     private bool start = false;
@@ -32,19 +31,12 @@ public class DialougeTrigger1 : MonoBehaviour
         
     }
 
-    void Start()
-    {
-        //part of Test Script
-        contiuneStoryActionRefrence.action.performed += OnContiune;
-    }
-
-
     public void Update()
     {
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
             visualCue.SetActive(true);
-           
+            if (InputManager.GetInstance().GetInteractPressed())
 
             {
                 DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
@@ -56,24 +48,7 @@ public class DialougeTrigger1 : MonoBehaviour
             
         }
     }
-    //part of Test Script
-    private void OnContiune(InputAction.CallbackContext obj)
-    {
-        if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
-        {
-            visualCue.SetActive(true);
-
-
-            {
-                DialougeManager1.GetInstance().EnterDialougeMode(inkJSON);
-            }
-        }
-        else
-        {
-            visualCue.SetActive(false);
-
-        }
-    }
+    
 
     private void OnTriggerEnter(Collider collider)
     {
