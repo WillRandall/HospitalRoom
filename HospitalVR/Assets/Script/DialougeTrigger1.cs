@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 
 
+
 public class DialougeTrigger1 : MonoBehaviour
 {
 
@@ -14,14 +15,10 @@ public class DialougeTrigger1 : MonoBehaviour
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
 
-    
-
-    
-    private bool start = false;
 
     private bool playerInRange;
 
-    public void Awake()
+    private void Awake()
     {
  
         playerInRange = false;
@@ -31,7 +28,7 @@ public class DialougeTrigger1 : MonoBehaviour
         
     }
 
-    public void Update()
+    private void Update()
     {
         if (playerInRange && !DialougeManager1.GetInstance().dialougeIsPlaying)
         {
