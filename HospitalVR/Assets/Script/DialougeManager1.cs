@@ -29,7 +29,6 @@ public class DialougeManager1 : MonoBehaviour
 
     public bool dialougeIsPlaying { get; private set; }
 
-
     private static DialougeManager1 instance;
 
     private void Awake()
@@ -88,12 +87,6 @@ public class DialougeManager1 : MonoBehaviour
         dialougePanel.SetActive(true);
 
         ContinueStory();
-
-
-        if (currentStory.canContinue)
-        {
-            dialougeText.text = currentStory.Continue();
-        }
     }
     private void ExitDialougeMode()
     {
