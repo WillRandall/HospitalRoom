@@ -411,6 +411,10 @@ PrefabInstance:
       value: 13de0d9f-e1e2-4c9c-9553-dff170ecff6c
       objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492962, guid: 5a25942dfba3abb46ac2ff13d67a8ed1, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978257652492962, guid: 5a25942dfba3abb46ac2ff13d67a8ed1, type: 3}
       propertyPath: m_RequestedTrackingOriginMode
       value: 1
       objectReference: {fileID: 0}
@@ -1280,7 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1130373978}
-  inkJSON: {fileID: 4900000, guid: 6cf48bb6d89824cc69e35b43f9a1aca6, type: 3}
+  inkJSON: {fileID: 4900000, guid: b9f2ee399354fcc41bb66b65f1cde40f, type: 3}
 --- !u!65 &297433747
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1343,7 +1347,7 @@ GameObject:
   - component: {fileID: 336007678}
   - component: {fileID: 336007679}
   m_Layer: 0
-  m_Name: Point Light (4)
+  m_Name: Main Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4256,9 +4260,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -56.205
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
+      propertyPath: m_MotionVectors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c50cf9d279673a41a2a2c598775ef81, type: 2}
     - target: {fileID: 919132149155446097, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
       propertyPath: m_Name
       value: monitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a843f49bf0adf7e4ab09b518f75c08a7, type: 3}
@@ -5488,7 +5516,7 @@ GameObject:
   - component: {fileID: 1039309986}
   - component: {fileID: 1039309985}
   m_Layer: 0
-  m_Name: Point Light (1)
+  m_Name: Light For Testing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6388,7 +6416,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 14
   m_CollisionDetection: 0
 --- !u!1 &1454436093
 GameObject:
