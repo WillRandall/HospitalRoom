@@ -133,6 +133,7 @@ public class DialougeManager1 : MonoBehaviour
         {
             choices[i].gameObject.SetActive(false);
         }
+
         StartCoroutine(SelectFirstChoice());
     }
 
