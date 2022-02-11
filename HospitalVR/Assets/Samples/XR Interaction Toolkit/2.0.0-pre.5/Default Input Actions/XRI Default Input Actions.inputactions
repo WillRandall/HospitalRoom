@@ -749,9 +749,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "MoveTest",
+                    "name": "Dmove",
                     "type": "Button",
-                    "id": "fda03cb1-2159-4596-80f8-c42330f602eb",
+                    "id": "71005a19-3d26-4370-9d2c-fd43b312514d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1135,12 +1135,12 @@
                 },
                 {
                     "name": "",
-                    "id": "1809d83d-1885-4d2c-a5e1-8ff80bf126e6",
-                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "id": "33bc4bea-7ada-4fc9-8b8f-25542000501d",
+                    "path": "<XRController>{RightHand}/gripPressed",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveTest",
+                    "action": "Dmove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
