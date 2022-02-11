@@ -771,9 +771,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""MoveTest"",
+                    ""name"": ""Dmove"",
                     ""type"": ""Button"",
-                    ""id"": ""fda03cb1-2159-4596-80f8-c42330f602eb"",
+                    ""id"": ""71005a19-3d26-4370-9d2c-fd43b312514d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -1157,12 +1157,12 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1809d83d-1885-4d2c-a5e1-8ff80bf126e6"",
-                    ""path"": ""<XRController>{RightHand}/triggerPressed"",
+                    ""id"": ""33bc4bea-7ada-4fc9-8b8f-25542000501d"",
+                    ""path"": ""<XRController>{RightHand}/gripPressed"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""MoveTest"",
+                    ""action"": ""Dmove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1274,7 +1274,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         m_XRIRightHand_TranslateAnchor = m_XRIRightHand.FindAction("Translate Anchor", throwIfNotFound: true);
         m_XRIRightHand_interact = m_XRIRightHand.FindAction("interact", throwIfNotFound: true);
         m_XRIRightHand_submit = m_XRIRightHand.FindAction("submit", throwIfNotFound: true);
-        m_XRIRightHand_MoveTest = m_XRIRightHand.FindAction("MoveTest", throwIfNotFound: true);
+        m_XRIRightHand_Dmove = m_XRIRightHand.FindAction("Dmove", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1555,7 +1555,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
     private readonly InputAction m_XRIRightHand_TranslateAnchor;
     private readonly InputAction m_XRIRightHand_interact;
     private readonly InputAction m_XRIRightHand_submit;
-    private readonly InputAction m_XRIRightHand_MoveTest;
+    private readonly InputAction m_XRIRightHand_Dmove;
     public struct XRIRightHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -1579,7 +1579,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         public InputAction @TranslateAnchor => m_Wrapper.m_XRIRightHand_TranslateAnchor;
         public InputAction @interact => m_Wrapper.m_XRIRightHand_interact;
         public InputAction @submit => m_Wrapper.m_XRIRightHand_submit;
-        public InputAction @MoveTest => m_Wrapper.m_XRIRightHand_MoveTest;
+        public InputAction @Dmove => m_Wrapper.m_XRIRightHand_Dmove;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1646,9 +1646,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @submit.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSubmit;
                 @submit.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSubmit;
                 @submit.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnSubmit;
-                @MoveTest.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnMoveTest;
-                @MoveTest.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnMoveTest;
-                @MoveTest.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnMoveTest;
+                @Dmove.started -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnDmove;
+                @Dmove.performed -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnDmove;
+                @Dmove.canceled -= m_Wrapper.m_XRIRightHandActionsCallbackInterface.OnDmove;
             }
             m_Wrapper.m_XRIRightHandActionsCallbackInterface = instance;
             if (instance != null)
@@ -1710,9 +1710,9 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 @submit.started += instance.OnSubmit;
                 @submit.performed += instance.OnSubmit;
                 @submit.canceled += instance.OnSubmit;
-                @MoveTest.started += instance.OnMoveTest;
-                @MoveTest.performed += instance.OnMoveTest;
-                @MoveTest.canceled += instance.OnMoveTest;
+                @Dmove.started += instance.OnDmove;
+                @Dmove.performed += instance.OnDmove;
+                @Dmove.canceled += instance.OnDmove;
             }
         }
     }
@@ -1790,6 +1790,6 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
         void OnTranslateAnchor(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
         void OnSubmit(InputAction.CallbackContext context);
-        void OnMoveTest(InputAction.CallbackContext context);
+        void OnDmove(InputAction.CallbackContext context);
     }
 }

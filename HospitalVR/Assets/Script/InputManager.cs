@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour
     }
 
     //TESTING
-    public void MovePressed(InputAction.CallbackContext context)
+    public void DmovePressed(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -66,6 +66,12 @@ public class InputManager : MonoBehaviour
         {
             submitPressed = false;
         }
+    }
+
+    //TESTING
+    public Vector2 GetMoveDirection()
+    {
+        return moveDirection;
     }
 
     public bool GetInteractPressed()
