@@ -11,7 +11,7 @@
 ->TheMan
 
 ==TheMan==
-Its been a long time since iv seen you 
+Its been a long time since I've seen you 
 *[Do I know you?] 
 ->YouAreHere
 
@@ -71,7 +71,7 @@ One last question, Why are there no flowers or cards in this room?
 
 
 ==Explanation== 
-Seems a little strange someone in a hospital would have no flowrs.
+Seems a little strange someone in a hospital would have no flowers.
 *[why are you here?]
 ->Nice 
 
@@ -80,7 +80,7 @@ Seems a little strange someone in a hospital would have no flowrs.
 
 
 ==Nice== 
-Im here because there are no flowrs
+I'm here because there are no flowers
 ->Answer
 
 
