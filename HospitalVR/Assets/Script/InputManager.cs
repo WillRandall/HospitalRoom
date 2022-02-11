@@ -7,6 +7,9 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class InputManager : MonoBehaviour
 {
+    //TESTING
+    private Vector2 moveDirection = Vector2.zero;
+
     private bool submitPressed = false;
     private bool interactPressed = false;
    
@@ -26,6 +29,20 @@ public class InputManager : MonoBehaviour
     {
         return instance;
     }
+
+    //TESTING
+    public void MovePressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            moveDirection = context.ReadValue<Vector2>();
+        }
+        else if (context.canceled)
+        {
+            moveDirection = context.ReadValue<Vector2>();
+        }
+    }
+
 
     public void InteractButtonPressed(InputAction.CallbackContext context)
     {
