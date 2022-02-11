@@ -20,9 +20,8 @@ public class DialougeManager1 : MonoBehaviour
     [Header("Choices UI")]
     [SerializeField] private GameObject[] choices;
 
-
-
     private TextMeshProUGUI[] choicesText;
+
     private PlayerInput playerInput;
 
     private Story currentStory;
@@ -71,7 +70,7 @@ public class DialougeManager1 : MonoBehaviour
             return;
         }
         // Handle countinuing to the next line in the dialouge when submit is pressed
-        if (InputManager.GetInstance().GetSubmitPressed())
+        if (currentStory.currentChoices.Count == 0 && InputManager.GetInstance().GetSubmitPressed())
         {
             ContinueStory();
         }
@@ -149,6 +148,8 @@ public class DialougeManager1 : MonoBehaviour
     public void MakeChoice(int choiceIndex)
     {
         currentStory.ChooseChoiceIndex(choiceIndex);
+        InputManager.GetInstance().RegisterSubmitPressed();
+        ContinueStory();
     }
 
 
