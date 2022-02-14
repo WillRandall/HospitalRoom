@@ -68,8 +68,8 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    //TESTING
-    public Vector2 GetMoveDirection()
+    //TEST
+public Vector2 GetMoveDirection()
     {
         return moveDirection;
     }
