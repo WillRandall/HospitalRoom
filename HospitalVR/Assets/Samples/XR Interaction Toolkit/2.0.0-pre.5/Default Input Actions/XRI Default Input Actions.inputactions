@@ -205,6 +205,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Dmove",
+                    "type": "Button",
+                    "id": "a96f904b-cd62-477b-a2ba-89ec01ab0bfe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -570,6 +579,17 @@
                     "action": "UI Press Value",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02ece037-6505-481c-a7b9-0129cd27cf10",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dmove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -743,15 +763,6 @@
                     "name": "submit",
                     "type": "Button",
                     "id": "fdf5647c-9604-4f37-b6b4-83d9fd63400f",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Dmove",
-                    "type": "Button",
-                    "id": "71005a19-3d26-4370-9d2c-fd43b312514d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -1130,17 +1141,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "submit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "33bc4bea-7ada-4fc9-8b8f-25542000501d",
-                    "path": "<XRController>{RightHand}/gripPressed",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dmove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
