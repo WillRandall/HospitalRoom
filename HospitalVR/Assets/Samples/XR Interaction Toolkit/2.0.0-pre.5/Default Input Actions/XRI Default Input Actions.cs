@@ -605,7 +605,7 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 {
                     ""name"": """",
                     ""id"": ""02ece037-6505-481c-a7b9-0129cd27cf10"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""path"": ""<XRController>{LeftHand}/secondary2DAxisTouch"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
