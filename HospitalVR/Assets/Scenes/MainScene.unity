@@ -7654,9 +7654,21 @@ MonoBehaviour:
     m_ActionId: fdf5647c-9604-4f37-b6b4-83d9fd63400f
     m_ActionName: XRI RightHand/New action
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 71005a19-3d26-4370-9d2c-fd43b312514d
-    m_ActionName: XRI RightHand/Dmove
+      m_Calls:
+      - m_Target: {fileID: 1481809520}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: DmovePressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a96f904b-cd62-477b-a2ba-89ec01ab0bfe
+    m_ActionName: XRI LeftHand/Dmove[/Keyboard/leftArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: XRI RightHand
