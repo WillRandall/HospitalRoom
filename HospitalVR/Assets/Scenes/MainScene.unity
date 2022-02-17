@@ -584,6 +584,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a25942dfba3abb46ac2ff13d67a8ed1, type: 3}
+--- !u!20 &52452847 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 4581978257514986273, guid: 5a25942dfba3abb46ac2ff13d67a8ed1, type: 3}
+  m_PrefabInstance: {fileID: 52452846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &104120259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4491,19 +4496,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &571525421
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726314033}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.020000001, y: 0.02, z: 0.020013705}
-  m_Center: {x: -9.1615054e-20, y: -7.685227e-13, z: -0.00007736206}
 --- !u!1001 &677786996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5008,8 +5000,6 @@ GameObject:
   - component: {fileID: 726314037}
   - component: {fileID: 726314036}
   - component: {fileID: 726314035}
-  - component: {fileID: 571525421}
-  - component: {fileID: 726314034}
   - component: {fileID: 726314038}
   - component: {fileID: 726314039}
   m_Layer: 5
@@ -5019,25 +5009,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &726314034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726314033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afe3cda3e244f60419474164d6ba3b0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 0
-  m_CheckFor2DOcclusion: 0
-  m_CheckFor3DOcclusion: 0
-  m_MaxDistance: 1000
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &726314035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5071,7 +5042,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 52452847}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
