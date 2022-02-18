@@ -12,8 +12,8 @@ public class InputManager : MonoBehaviour
 
     private bool submitPressed = false;
     private bool interactPressed = false;
-   
-
+    public bool buttonAstate = false;
+    
     private static InputManager instance;
 
     private void Awake()
@@ -93,3 +93,17 @@ public Vector2 GetMoveDirection()
         submitPressed = false;
     }
 }
+/*
+ * public void buttonA(InputAction.CalbackContext context)
+ * {
+ * if (context.performed)
+ * {
+ * submitPressed = true;
+ * buttonAstate = true;
+ * buttonBstate = false;
+ * }
+ * 
+ * 
+ * 
+ * }
+ * /
