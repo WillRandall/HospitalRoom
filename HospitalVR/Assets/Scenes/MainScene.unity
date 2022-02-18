@@ -7411,7 +7411,19 @@ MonoBehaviour:
     m_ActionId: fdf5647c-9604-4f37-b6b4-83d9fd63400f
     m_ActionName: XRI RightHand/New action
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1481809520}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: DmovePressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: a96f904b-cd62-477b-a2ba-89ec01ab0bfe
     m_ActionName: XRI LeftHand/Dmove[/Keyboard/leftArrow]
   m_NeverAutoSwitchControlSchemes: 0
@@ -7426,6 +7438,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Id
+      value: 81a2b548-94b7-4a7a-9449-567af66ec635
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Id
+      value: 51b89182-b00e-446a-a9a1-2c023d316b5f
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Id
+      value: 74213b3e-841f-453f-9658-4c53fa5a6ecb
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Name
+      value: Select Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Id
+      value: eea12b21-99c8-41b8-8ef5-ddb47d1367ba
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Name
+      value: UI Press Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Name
+      value: Activate Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978255873452322, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Name
+      value: Tracking State
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978257514986276, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Id
+      value: a3a9bd9f-f63a-41eb-86e7-2534da4f36e0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978257514986276, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Id
+      value: e3425342-93d5-4f38-ad86-cc20948c90cb
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978257514986276, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_PositionInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: fe0bc589-7ae8-4877-bdab-1b3b489f9205
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978257514986276, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 90ae5308-e9cd-4a3f-a2bf-eb196cb7a008
+      objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
       propertyPath: m_RootOrder
       value: 0
