@@ -92,8 +92,7 @@ public Vector2 GetMoveDirection()
     {
         submitPressed = false;
     }
-}
-/*
+    /*
  * public void buttonA(InputAction.CalbackContext context)
  * {
  * if (context.performed)
@@ -106,4 +105,5 @@ public Vector2 GetMoveDirection()
  * 
  * 
  * }
- * /
+ */
+}
