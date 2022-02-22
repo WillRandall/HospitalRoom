@@ -230,12 +230,12 @@ public partial class @XRIDefaultInputActions : IInputActionCollection2, IDisposa
                 },
                 {
                     ""name"": ""Dmove"",
-                    ""type"": ""Button"",
+                    ""type"": ""Value"",
                     ""id"": ""a96f904b-cd62-477b-a2ba-89ec01ab0bfe"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": ""Stick"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
