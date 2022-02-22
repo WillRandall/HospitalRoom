@@ -7666,6 +7666,10 @@ PrefabInstance:
       propertyPath: m_RotationInput.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
       value: 90ae5308-e9cd-4a3f-a2bf-eb196cb7a008
       objectReference: {fileID: 0}
+    - target: {fileID: 4581978257652492962, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4581978257652492963, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
       propertyPath: m_RootOrder
       value: 0
