@@ -1,9 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovment : MonoBehaviour
 {
+
+    XRIDefaultInputActions input;
+
+    Vector2 currentMovment;
+    bool DmovePressed;
+
+    private void Awake()
+    {
+        input = new XRIDefaultInputActions();
+
+        input.XRILeftHand.Dmove.performed += ctx => currentMovment = ctx.ReadValue<Vector2>();
+        DmovePressed = currentMovment.x != 0 || currentMovment.y != 0;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +29,10 @@ public class PlayerMovment : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnEnable()
+    {
+        input.XRILeftHand.Enable();
     }
 }
