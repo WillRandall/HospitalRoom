@@ -7743,7 +7743,7 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 4581978257514986273, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
   m_PrefabInstance: {fileID: 1516261584}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1516261588
+--- !u!54 &1516261591
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7755,7 +7755,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
