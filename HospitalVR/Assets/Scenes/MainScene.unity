@@ -7650,6 +7650,42 @@ PrefabInstance:
       propertyPath: m_TrackingStateAction.m_Action.m_Name
       value: Tracking State
       objectReference: {fileID: 0}
+    - target: {fileID: 4581978256343732387, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Id
+      value: 115906b1-51c8-4977-8476-a7a87dc4f905
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Id
+      value: 54ccecbc-2d44-423c-8102-0187bc34e302
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Id
+      value: c2565604-06a7-4261-be07-8e2fb98aca4d
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_SelectActionValue.m_Action.m_Name
+      value: Select Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Id
+      value: f945d06b-3fd4-40dd-b4b6-672f82a4c8dd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_UIPressActionValue.m_Action.m_Name
+      value: UI Press Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_ActivateActionValue.m_Action.m_Name
+      value: Activate Action Value
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581978256967806177, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
+      propertyPath: m_TrackingStateAction.m_Action.m_Name
+      value: Tracking State
+      objectReference: {fileID: 0}
     - target: {fileID: 4581978257514986276, guid: dfc4d67dc9add8140842d2c8f12b6fb6, type: 3}
       propertyPath: m_PositionInput.m_Action.m_Id
       value: a3a9bd9f-f63a-41eb-86e7-2534da4f36e0
