@@ -31,7 +31,7 @@ public class InputManager : MonoBehaviour
     }
 
     //TESTING
-    public void DmovePressed(InputAction.CallbackContext context)
+    public void MovePressed(InputAction.CallbackContext context)
     {
         if (context.performed)
         {

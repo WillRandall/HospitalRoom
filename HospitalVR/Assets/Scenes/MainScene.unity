@@ -5349,7 +5349,7 @@ MonoBehaviour:
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_PointAction: {fileID: 0}
-  m_MoveAction: {fileID: -5515950661952201122, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  m_MoveAction: {fileID: 4795101791200007668, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_SubmitAction: {fileID: -5738177873550592365, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   m_CancelAction: {fileID: 0}
   m_LeftClickAction: {fileID: 0}
@@ -6002,7 +6002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1055131065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7594,7 +7594,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1481809520}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
-        m_MethodName: DmovePressed
+        m_MethodName: MovePressed
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7604,8 +7604,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: a96f904b-cd62-477b-a2ba-89ec01ab0bfe
-    m_ActionName: XRI LeftHand/Dmove[/Keyboard/leftArrow]
+    m_ActionId: a729d085-d4f0-403b-9fa9-abccbfc00b1d
+    m_ActionName: XRI RightHand/move1
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: XRI RightHand

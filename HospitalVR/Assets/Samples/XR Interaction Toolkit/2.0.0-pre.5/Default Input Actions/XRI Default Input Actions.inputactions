@@ -749,9 +749,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dmove",
+                    "name": "move1",
                     "type": "Value",
-                    "id": "7d62160a-2564-424d-b978-64f0268a5105",
+                    "id": "a729d085-d4f0-403b-9fa9-abccbfc00b1d",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -1135,12 +1135,12 @@
                 },
                 {
                     "name": "",
-                    "id": "db52377c-ac95-4696-801e-3c50a2906839",
-                    "path": "<XRController>{RightHand}/secondary2DAxis",
+                    "id": "a5c26768-8c75-47b4-869b-14ddd7f0d3cb",
+                    "path": "<XRController>{RightHand}/joystick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dmove",
+                    "action": "move1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
