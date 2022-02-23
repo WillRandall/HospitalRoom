@@ -15,7 +15,7 @@ public class PlayerMovment : MonoBehaviour
     {
         input = new XRIDefaultInputActions();
 
-        input.XRILeftHand.Dmove.performed += ctx => currentMovment = ctx.ReadValue<Vector2>();
+        input.XRIRightHand.Dmove.performed += ctx => currentMovment = ctx.ReadValue<Vector2>();
         DmovePressed = currentMovment.x != 0 || currentMovment.y != 0;
     }
 
@@ -33,6 +33,6 @@ public class PlayerMovment : MonoBehaviour
 
     void OnEnable()
     {
-        input.XRILeftHand.Enable();
+        input.XRIRightHand.Enable();
     }
 }

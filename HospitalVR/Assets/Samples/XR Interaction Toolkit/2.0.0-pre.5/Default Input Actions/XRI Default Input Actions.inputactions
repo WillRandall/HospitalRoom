@@ -205,15 +205,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Dmove",
-                    "type": "Value",
-                    "id": "a96f904b-cd62-477b-a2ba-89ec01ab0bfe",
-                    "expectedControlType": "Stick",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -579,17 +570,6 @@
                     "action": "UI Press Value",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "02ece037-6505-481c-a7b9-0129cd27cf10",
-                    "path": "<XRController>{LeftHand}/secondary2DAxisTouch",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dmove",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -767,6 +747,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Dmove",
+                    "type": "Value",
+                    "id": "7d62160a-2564-424d-b978-64f0268a5105",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1141,6 +1130,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db52377c-ac95-4696-801e-3c50a2906839",
+                    "path": "<XRController>{RightHand}/secondary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dmove",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
