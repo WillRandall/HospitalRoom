@@ -205,15 +205,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Dmove",
-                    "type": "Value",
-                    "id": "a96f904b-cd62-477b-a2ba-89ec01ab0bfe",
-                    "expectedControlType": "Stick",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -579,17 +570,6 @@
                     "action": "UI Press Value",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "02ece037-6505-481c-a7b9-0129cd27cf10",
-                    "path": "<XRController>{LeftHand}/secondary2DAxisTouch",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dmove",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -767,6 +747,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "move1",
+                    "type": "Value",
+                    "id": "a729d085-d4f0-403b-9fa9-abccbfc00b1d",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1141,6 +1130,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "submit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a5c26768-8c75-47b4-869b-14ddd7f0d3cb",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "move1",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
