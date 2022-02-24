@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
     //TESTING
     private Vector2 moveDirection = Vector2.zero;
 
-    private bool submitPressed = false;
+    public bool submitPressed = false;
     private bool interactPressed = false;
     public bool buttonAstate = false;
     
@@ -61,10 +61,12 @@ public class InputManager : MonoBehaviour
         if (context.performed)
         {
             submitPressed = true;
+            GameObject.Find("XR Rig 2").GetComponent<SoundDelay>().trig = true;
         }
         else if (context.canceled)
         {
             submitPressed = false;
+            GameObject.Find("XR Rig 2").GetComponent<SoundDelay>().trig = false;
         }
     }
 

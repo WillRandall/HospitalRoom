@@ -8,16 +8,15 @@ public class SoundDelay : MonoBehaviour
 
     public AudioSource sound;
 
-    bool trig = false;
+    public bool trig = false;
     
     void Start()
     {
-       trig = GameObject.Find("InputManager").GetComponent<InputManager>();
+       //trig = GameObject.Find("InputManager").GetComponent<InputManager>().submitPressed;
     }
 
     void Update()
     {
-        //trigScr = InputManager.submitPressed;
         if (trig == true)
         {
             sound = GetComponent<AudioSource>();
