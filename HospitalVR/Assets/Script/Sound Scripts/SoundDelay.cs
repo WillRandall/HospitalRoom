@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class SoundDelay : MonoBehaviour
 {
-    public int delay;
+    //public int delay;
 
-    AudioSource sound;
+    public AudioSource sound;
+
+    bool trig = false;
     
     void Start()
     {
-        sound = GetComponent<AudioSource>();
-        sound.PlayDelayed(delay);
+       trig = GameObject.Find("InputManager").GetComponent<InputManager>();
     }
 
+    void Update()
+    {
+        //trigScr = InputManager.submitPressed;
+        if (trig == true)
+        {
+            sound = GetComponent<AudioSource>();
+            sound.Play();
+        }
+    }
 
 }
