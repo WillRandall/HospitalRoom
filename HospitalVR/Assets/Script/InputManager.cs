@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
     //TESTING
     private Vector2 moveDirection = Vector2.zero;
 
-    public bool submitPressed = false;
+    private bool submitPressed = false;
     private bool interactPressed = false;
     public bool buttonAstate = false;
     
