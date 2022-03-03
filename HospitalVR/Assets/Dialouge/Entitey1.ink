@@ -1,3 +1,4 @@
+VAR entity = 1
 *[Hello?]
 -> Question
 
@@ -97,7 +98,7 @@ You have to make a choice soon
 
 
 //Entitey2
-
+~ changeEntity(2)
 Who are you?
     * [Im dreaming arn't I?] 
     -> Dream
@@ -187,7 +188,7 @@ Who are you?
         
         
         //Entiety3
-        
+        ~ changeEntity(3)
         My daughter where is she? 
     *I need to get to her 
     -> Void
@@ -298,8 +299,8 @@ Who are you?
     * I cant see her like that again
     ->DONE
     
-    
-    
+=== function changeEntity(newEntity) ===
+~ entity = newEntity    
 
     
     
