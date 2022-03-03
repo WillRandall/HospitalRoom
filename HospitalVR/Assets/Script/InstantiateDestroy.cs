@@ -1,24 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ink.Runtime;
 
 public class InstantiateDestroy : MonoBehaviour
 {
     int scriptEnding = 0;
     public GameObject EntityDel;
     public GameObject EnityInst;
-    // Start is called before the first frame update
-    void Start()
+     
+    //this method will eventually update from ink story
+    // am unable at this point to get "Story" or "_inkStory" to work
+    public void UpdateFromStory()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (scriptEnding == 1)
-        {
-
-        }
+        //commented next line out to avoid compiler errors
+        /* 
+         * scriptEnding = (int)story.variablesState["scriptEnding"];
+         */
     }
 }
