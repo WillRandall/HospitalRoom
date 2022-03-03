@@ -5,6 +5,7 @@ using Ink.Runtime;
 
 public class InstantiateDestroy : MonoBehaviour
 {
+    //script needs a more robust way of deciding when to delete and instantiate entities.
     int scriptEnding = 0;
     public GameObject EntityDel;
     public GameObject EnityInst;
@@ -17,5 +18,10 @@ public class InstantiateDestroy : MonoBehaviour
         /* 
          * scriptEnding = (int)story.variablesState["scriptEnding"];
          */
+        if (scriptEnding != 0)
+        {
+            //destory EntityDel
+        }
     }
+    
 }
