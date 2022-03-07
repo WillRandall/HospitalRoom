@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 VAR entity = 0
 ~ changeEntity(1)
-=======
->>>>>>> 1b112f89e29c39ac7932ba89974a56588acd7110
 *[Hello?]
 -> Question
 
@@ -103,7 +100,7 @@ You have to make a choice soon
 
 
 //Entitey2
-
+~ changeEntity(2)
 Who are you?
     * [Im dreaming arn't I?] 
     -> Dream
@@ -195,6 +192,7 @@ Who are you?
         
         //Entiety3
         == E3 ==
+	~ changeEntity(3)
         My daughter where is she? 
     *I need to get to her 
     -> Void
@@ -299,12 +297,15 @@ Who are you?
     She will not live, Cancer, she is pale, come back to me 
     * [I remember] 
         Brain cancer but it spread fast
+	~ changeEntity(4)
     ->Truth2
     * Bring me to her
     -> DONE
     * I cant see her like that again
     ->DONE
-    
+
+=== function changeEntity(newEntity) ===
+~ entity = newEntity
     
     
 
