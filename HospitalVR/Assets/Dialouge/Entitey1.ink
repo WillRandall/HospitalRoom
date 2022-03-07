@@ -1,8 +1,10 @@
-VAR entity = 1
+VAR entity = 0
+~ changeEntity(1)
 *[Hello?]
 -> Question
 
 ==Question==
+~ changeEntity(1)
 *[Where am I?]
 -> TheMan
 *[Is anyone there?]

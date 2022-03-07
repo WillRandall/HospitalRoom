@@ -10,6 +10,7 @@ public class EntitySelecter : MonoBehaviour
     public GameObject entity1;
     public GameObject entity2;
     public GameObject entity3;
+    
 
     [Header("Ink JSON")]
     [SerializeField] private TextAsset inkJSON;
@@ -24,7 +25,8 @@ public class EntitySelecter : MonoBehaviour
     public void changer(TextAsset inkJSON)
     {
         _story = new Story(inkJSON.text);
-        var entity = (int)_story.variablesState["entity"];
+        int entity = (int) _story.variablesState["entity"];
+        Debug.Log(entity);
         if (entity == 1)
         {
             entity1.SetActive(true);
@@ -32,33 +34,33 @@ public class EntitySelecter : MonoBehaviour
             entity3.SetActive(false);
         }
 
-        if (entity == 2)
+        else if (entity == 2)
         {
             entity1.SetActive(false);
             entity2.SetActive(true);
             entity3.SetActive(false);
         }
 
-        if (entity == 3)
+        else if (entity == 3)
         {
             entity1.SetActive(false);
             entity2.SetActive(false);
             entity3.SetActive(true);
         }
 
-        if (entity == 4)
+        else if (entity == 4)
         {
             entity1.SetActive(false);
             entity2.SetActive(false);
             entity3.SetActive(false);
         }
-
+        //changer(inkJSON);
     }
 
     // Update is called once per frame
     void Update()
     {
-        changer(inkJSON);
+        changer(inkJSON); 
 
         
     }
