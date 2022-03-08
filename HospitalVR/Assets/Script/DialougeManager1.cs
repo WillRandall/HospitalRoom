@@ -5,10 +5,14 @@ using TMPro;
 using Ink.Runtime;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using Ink.UnityIntegration;
 
 
 public class DialougeManager1 : MonoBehaviour
 {
+
+    [Header("Globals Ink File")]
+    [SerializeField] private InkFile globalsInkFile;
 
     [Header("Dialouge UI")]
 
@@ -30,6 +34,8 @@ public class DialougeManager1 : MonoBehaviour
 
     private static DialougeManager1 instance;
 
+    private TEST dialougeVariables;
+
     private void Awake()
     {
         if (instance != null)
@@ -37,6 +43,8 @@ public class DialougeManager1 : MonoBehaviour
             Debug.LogWarning("Found more than one Dialouge Manager in scene");
         }
         instance = this;
+
+        dialougeVariables = new TEST(globalsInkFile.filePath);
 
         
     }
@@ -85,10 +93,14 @@ public class DialougeManager1 : MonoBehaviour
         dialougeIsPlaying = true;
         dialougePanel.SetActive(true);
 
+        dialougeVariables.StartListening(currentStory);
+
         ContinueStory();
     }
     private void ExitDialougeMode()
     {
+        dialougeVariables.StartListening(currentStory);
+
         dialougeIsPlaying = false;
         dialougePanel.SetActive(false);
         dialougeText.text = "";
