@@ -1,3 +1,5 @@
+
+
 VAR entity = 0
 ~ changeEntity(1)
 *[Hello?]
@@ -14,7 +16,7 @@ VAR entity = 0
 ->TheMan
 
 ==TheMan==
-Its been a long time since i've seen you 
+Its been a long time since I've seen you.{entity} 
 *[Do I know you?] 
 ->YouAreHere
 
@@ -304,9 +306,11 @@ Who are you?
     * I cant see her like that again
     ->DONE
 
-=== function changeEntity(newEntity) ===
-~ entity = newEntity
-    
+
+    === function changeEntity(newEntity) ===
+	~ entity = newEntity
+	~ return entity
+
     
 
     
