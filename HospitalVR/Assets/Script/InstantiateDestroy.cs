@@ -18,8 +18,8 @@ public class InstantiateDestroy : MonoBehaviour
     // am unable at this point to get "Story" or "_inkStory" to work
     public void UpdateFromStory()
     {
-
         
+
           //scriptEnding = (int)story.variablesState["scriptEnding"];
          
         if (scriptEnding != 0)
