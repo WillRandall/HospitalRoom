@@ -1,7 +1,12 @@
+
+
+VAR entity = 0
+~ changeEntity(1)
 *[Hello?]
 -> Question
 
 ==Question==
+~ changeEntity(1)
 *[Where am I?]
 -> TheMan
 *[Is anyone there?]
@@ -11,7 +16,7 @@
 ->TheMan
 
 ==TheMan==
-Its been a long time since i've seen you 
+Its been a long time since I've seen you.{entity} 
 *[Do I know you?] 
 ->YouAreHere
 
@@ -97,7 +102,7 @@ You have to make a choice soon
 
 
 //Entitey2
-
+~ changeEntity(2)
 Who are you?
     * [Im dreaming arn't I?] 
     -> Dream
@@ -189,6 +194,7 @@ Who are you?
         
         //Entiety3
         == E3 ==
+	~ changeEntity(3)
         My daughter where is she? 
     *I need to get to her 
     -> Void
@@ -293,13 +299,18 @@ Who are you?
     She will not live, Cancer, she is pale, come back to me 
     * [I remember] 
         Brain cancer but it spread fast
+	~ changeEntity(4)
     ->Truth2
     * Bring me to her
     -> DONE
     * I cant see her like that again
     ->DONE
-    
-    
+
+
+    === function changeEntity(newEntity) ===
+	~ entity = newEntity
+	~ return entity
+
     
 
     
