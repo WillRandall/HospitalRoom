@@ -20,7 +20,7 @@ public class InstantiateDestroy : MonoBehaviour
     {
 
         
-          scriptEnding = (int)story.variablesState["scriptEnding"];
+          //scriptEnding = (int)story.variablesState["scriptEnding"];
          
         if (scriptEnding != 0)
         {
