@@ -1,1 +1,1 @@
-﻿
+VAR entity = 0
