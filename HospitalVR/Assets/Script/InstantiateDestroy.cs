@@ -13,14 +13,22 @@ public class InstantiateDestroy : MonoBehaviour
     public GameObject EntityDel;
     public GameObject EntityInst;
     int delay = 5000;
-     
+    [SerializeField] private TextAsset inkJSON;
+
+    private Story story;
+
+    private void Awake()
+    {
+        story = new Story(inkJSON.text);
+    }
+
     //this method will eventually update from ink story
     // am unable at this point to get "Story" or "_inkStory" to work
     public void UpdateFromStory()
     {
         
 
-          //scriptEnding = (int)story.variablesState["scriptEnding"];
+          scriptEnding = (int)story.variablesState["x"];
          
         if (scriptEnding != 0)
         {

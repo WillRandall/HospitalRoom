@@ -22351,6 +22351,7 @@ GameObject:
   - component: {fileID: 4100606537572742770}
   - component: {fileID: 4100606537572742772}
   - component: {fileID: 4100606537572742771}
+  - component: {fileID: 4100606537572742773}
   m_Layer: 0
   m_Name: Entity 1 Model
   m_TagString: Untagged
@@ -27144,6 +27145,21 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &4100606537572742773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100606537572742769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8b92e64f3ed0f4b9c6b23f58a72bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EntityDel: {fileID: 4100606537572742769}
+  EntityInst: {fileID: 1663153959}
+  inkJSON: {fileID: 4900000, guid: b9f2ee399354fcc41bb66b65f1cde40f, type: 3}
 --- !u!1 &4105671971423396301
 GameObject:
   m_ObjectHideFlags: 0
