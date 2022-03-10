@@ -1,6 +1,8 @@
 
 VAR E2 = 0
 
+
+
 Who are you?
     * [Im dreaming arn't I?] 
     -> Dream
@@ -23,7 +25,7 @@ Who are you?
      * Why? 
      -> Explanation
     
-    ~ raise(E2)
+    
     
     == Calm ==
        ....
@@ -88,12 +90,15 @@ Who are you?
     * Where is she? 
         Where are you? -> DONE
     
+    	~ raise(E2)
+
         
-      === function lower(ref x)
+       === function lower(ref x)
  	~ x = x - 1
 
-     === function raise(ref x)
+ === function raise(ref x)
  	~ x = x + 1
+
     
     
     

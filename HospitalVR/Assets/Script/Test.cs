@@ -40,7 +40,7 @@ public class TEST
     private void VariableChanged(string name, Ink.Runtime.Object value)
     {
         // only maintain variables that were initalized from the globals file 
-        if (variables)
+        //if (variables)
     }
 
 }
