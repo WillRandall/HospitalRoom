@@ -39,7 +39,8 @@ public class TEST
 
     private void VariableChanged(string name, Ink.Runtime.Object value)
     {
-        Debug.Log("Variable changed: " + name + " = " + value);
+        // only maintain variables that were initalized from the globals file 
+        if (variables)
     }
 
 }
