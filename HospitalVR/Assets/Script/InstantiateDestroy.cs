@@ -22,6 +22,10 @@ public class InstantiateDestroy : MonoBehaviour
         story = new Story(inkJSON.text);
     }
 
+    private void Update()
+    {
+        UpdateFromStory();
+    }
     //this method will eventually update from ink story
     // am unable at this point to get "Story" or "_inkStory" to work
     public void UpdateFromStory()
