@@ -1,3 +1,6 @@
+
+VAR E2 = 0
+
 Who are you?
     * [Im dreaming arn't I?] 
     -> Dream
@@ -6,7 +9,7 @@ Who are you?
         ->Scared 
     * An owl?
     -> Calm 
-    
+ 
     == Dream ==
      No Dream 
      * [This is just a nightmare] -> Scared  
@@ -20,7 +23,7 @@ Who are you?
      * Why? 
      -> Explanation
     
-   
+    ~ raise(E2)
     
     == Calm ==
        ....
@@ -86,7 +89,11 @@ Who are you?
         Where are you? -> DONE
     
         
-    
+      === function lower(ref x)
+ 	~ x = x - 1
+
+     === function raise(ref x)
+ 	~ x = x + 1
     
     
     
