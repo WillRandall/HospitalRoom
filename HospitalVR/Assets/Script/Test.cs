@@ -7,7 +7,7 @@ using System.IO;
 public class TEST 
 {
 
-    private Dictionary<string, Ink.Runtime.Object> variables;
+    public Dictionary<string, Ink.Runtime.Object> variables { get; private set; }
 
     public TEST(string globalsFilePath)
     {
@@ -28,6 +28,8 @@ public class TEST
 
     public void StartListening(Story story)
     {
+        // its important that VariablesToStory is before assigning to listener! 
+        VariablesToStory(story);
         story.variablesState.variableChangedEvent += VariableChanged;
     }
 
@@ -40,7 +42,19 @@ public class TEST
     private void VariableChanged(string name, Ink.Runtime.Object value)
     {
         // only maintain variables that were initalized from the globals file 
-        //if (variables)
+        if (variables.ContainsKey(name))
+        {
+            variables.Remove(name);
+            variables.Add(name, value);
+        }
+    }
+
+    private void VariablesToStory(Story story)
+    {
+        foreach(KeyValuePair<string, Ink.Runtime.Object> variable in variables)
+        {
+            story.variablesState.SetGlobal(variable.Key, variable.Value);
+        }
     }
 
 }

@@ -40,9 +40,6 @@ What do you remember?
 *[...]
 ->Nothing
 
-*[I can't remember anything]
--> Nothing
-
 ==NoTime==
 You're going to have to make a choice soon 
 *[What do you mean?]
@@ -50,8 +47,6 @@ You're going to have to make a choice soon
 
 *[Why won't you answer me?]
 ->Sorry
-
-
 
 ==Nothing== 
 Thats ok, you'll remember soon. 
@@ -66,7 +61,6 @@ Why are you asking these questions?
 
 *[Stop ignoring me] -> Angry 
 
-
 ==Angry== 
 One last question, Why are there no flowers or cards in this room? 
 *[What are you implying]
@@ -78,7 +72,6 @@ One last question, Why are there no flowers or cards in this room?
 *[I dont know] 
 ->Explanation
 
-
 ==Explanation== 
 Seems a little strange someone in a hospital would have no flowrs.
 *[Why are you here?]
@@ -87,11 +80,9 @@ Seems a little strange someone in a hospital would have no flowrs.
 *[Is that supposed to be an insult?] 
 -> Angry2 
 
-
 ==Nice== 
 Im here because there are no flowrs
 ->Answer
-
 
 ==Angry2== 
 No, but you feel hurt don't you?
