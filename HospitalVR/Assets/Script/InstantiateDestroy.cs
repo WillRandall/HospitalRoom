@@ -32,8 +32,8 @@ public class InstantiateDestroy : MonoBehaviour
     {
         
 
-          scriptEnding = (int)story.variablesState["x"];
-         
+          scriptEnding = (int)story.variablesState["E1"];
+         //Change "E1" to "E2" or "E3" depending per corresponding entity
         if (scriptEnding != 0)
         {
             Thread.Sleep(delay);
