@@ -18,13 +18,13 @@ public class NPCChanger : MonoBehaviour
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         //next lines stolen from InstantiateDestroy script
-        Thread.Sleep(delay);
-        EntityDel.SetActive(false);
-        EntityInst.SetActive(true);
+
     }
 
     private void Update()
     {
-        
+        Thread.Sleep(delay);
+        EntityDel.SetActive(false);
+        EntityInst.SetActive(true);
     }
 }
