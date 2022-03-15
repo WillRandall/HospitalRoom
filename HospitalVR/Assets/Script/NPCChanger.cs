@@ -20,7 +20,7 @@ public class NPCChanger : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         //next lines stolen from InstantiateDestroy script
         _inkStory.BindExternalFunction("updateEntity", (string name) => {
-          UpdateFromStory.Play(name);
+          //UpdateFromStory;
         });
     }
 
