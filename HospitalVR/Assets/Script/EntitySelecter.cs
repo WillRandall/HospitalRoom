@@ -11,7 +11,6 @@ public class EntitySelecter : MonoBehaviour
     public GameObject entity2;
     public GameObject entity3;
     private int entity;
-    //public int c;
     
 
     [Header("Ink JSON")]
@@ -25,12 +24,10 @@ public class EntitySelecter : MonoBehaviour
     }
     void Start()
     {
-        //entity = 1;
-        //Debug.Log(entity);
-        _story.BindExternalFunction("changeEntity", (int newValue) => {
-            rename(newValue);
+        //_story.BindExternalFunction("changeEntity", (int newValue) => {
+            //rename(newValue);
             //Debug.Log(entity);
-        });
+        //});
     }
 
     public void rename(int newValue)
@@ -40,16 +37,33 @@ public class EntitySelecter : MonoBehaviour
 
     public void changer(TextAsset inkJSON)
     {
-        //c = c + 1;
-        //int entity = ((Ink.Runtime.IntValue) DialougeManager1.GetInstance().GetVariableState("entity")).value;
-        //int entity = (int)_story.GetVariablesState["entity"];
-        //int entity = (int)_story.variablesState["entity"];
+        int entity = ((Ink.Runtime.IntValue) DialougeManager1
+            .GetInstance()
+            .GetVariableState("entity")).value;
+        switch(entity)
+        {
+            case 0:
+                entity = 0;
+                //Debug.Log(entity);
+                break;
+            case 1:
+                entity = 1;
+                Debug.Log(entity);
+                break;
+            case 2:
+                entity = 2;
+                Debug.Log(entity);
+                break;
+            case 3:
+                entity = 3;
+                Debug.Log(entity);
+                break;
+            case 4:
+                entity = 4;
+                Debug.Log(entity);
+                break;
+        }
         
-
-        //int entity = _story.GetIntVariable("entity");
-        Debug.Log(entity);
-        //int entity = 1;
-        //int entity = (int) _story.variablesState["entity"];
         //Debug.Log(entity);
         if (entity == 1)
         {
@@ -85,7 +99,6 @@ public class EntitySelecter : MonoBehaviour
     void Update()
     {
         changer(inkJSON); 
-
         
     }
 }
