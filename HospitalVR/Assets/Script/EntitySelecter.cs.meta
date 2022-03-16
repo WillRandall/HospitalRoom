@@ -3,7 +3,11 @@ guid: be17baefa586f51478075a1598d189e5
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - entity1: {instanceID: 0}
+  - entity2: {instanceID: 0}
+  - entity3: {instanceID: 0}
+  - inkJSON: {fileID: 4900000, guid: b9f2ee399354fcc41bb66b65f1cde40f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

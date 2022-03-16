@@ -27,27 +27,27 @@ public class EntitySelecter : MonoBehaviour
     {
         //entity = 1;
         //Debug.Log(entity);
-        
+        _story.BindExternalFunction("changeEntity", (int newValue) => {
+            rename(newValue);
+            //Debug.Log(entity);
+        });
+    }
+
+    public void rename(int newValue)
+    {
+        entity = newValue;
     }
 
     public void changer(TextAsset inkJSON)
     {
         //c = c + 1;
-        int entity = (int)_story.variablesState["entity"];
-        //_story.ObserveVariable("entity", (string varName, object newValue) => {
-            //entity = ((int)newValue);
-            //Debug.Log(entity);
-        //});
+        //int entity = ((Ink.Runtime.IntValue) DialougeManager1.GetInstance().GetVariableState("entity")).value;
+        //int entity = (int)_story.GetVariablesState["entity"];
+        //int entity = (int)_story.variablesState["entity"];
         
+
+        //int entity = _story.GetIntVariable("entity");
         Debug.Log(entity);
-        //if(c == 500)
-        //{
-        //entity = (int) _story.variablesState["entity"];
-
-
-
-
-        //}
         //int entity = 1;
         //int entity = (int) _story.variablesState["entity"];
         //Debug.Log(entity);

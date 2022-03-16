@@ -1,13 +1,15 @@
 
-VAR E1 = 0
-
+VAR entity = 0
+~ changeEntity(1)
 
 
 
 *[Hello?]
+~ changeEntity(1)
 -> Question
 
 ==Question==
+
 *[Where am I?]
 -> TheMan
 *[Is anyone there?]
@@ -91,11 +93,11 @@ No, but you feel hurt don't you?
 ==Answer==
 You have to make a choice soon 
 
-	~ raise(E1)
 
 //Entitey2
 
 Who are you?
+~ changeEntity(2)
     * [Im dreaming arn't I?] 
     -> Dream
     * [HELP] 
@@ -186,6 +188,7 @@ Who are you?
         
         //Entiety3
         == E3 ==
+	~ changeEntity(3)
         My daughter where is she? 
     *I need to get to her 
     -> Void
@@ -298,11 +301,17 @@ Who are you?
     ->DONE
 
 
+=== function changeEntity(newEntity) ===
+~ entity = newEntity
+~ return entity 
 
-    === function lower(ref x)
+=== function ent() ===
+~ return entity
+
+    === function lower(ref x) ===
  	~ x = x - 1
 
- === function raise(ref x)
+ === function raise(ref x) ===
  	~ x = x + 1
 
     
