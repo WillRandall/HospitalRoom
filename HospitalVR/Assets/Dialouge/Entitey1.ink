@@ -4,7 +4,7 @@ VAR entity = 0
 
 
 
-*[Hello?]
+*[...Hello?]
 ~ changeEntity(1)
 -> Question
 
@@ -12,22 +12,22 @@ VAR entity = 0
 
 *[Where am I?]
 -> TheMan
-*[Is anyone there?]
+*[Is anyone there...?]
 ->TheMan
 
-*[A hospital room?]
+*[...A hospital room?]
 ->TheMan
 
 ==TheMan==
-Its been a long time since I've seen you.
+It's been a long time since I've seen you.
 *[Do I know you?] 
 ->YouAreHere
 
-*[Hello, who are you?]
+*[Hello. Who are you?]
 ->YouAreHere
 
 ==YouAreHere==
-You don't remember me do you?
+You don't remember me, do you?
 *[No] 
 ->Confusion
 
@@ -43,7 +43,7 @@ What do you remember?
 ->Nothing
 
 ==NoTime==
-You're going to have to make a choice soon 
+You're going to have to make a choice soon.
 *[What do you mean?]
 ->Sorry
 
@@ -51,31 +51,31 @@ You're going to have to make a choice soon
 ->Sorry
 
 ==Nothing== 
-Thats ok, you'll remember soon. 
-*[Why can't I remember]
+That's alright. You'll remember soon.
+*[Why can't I remember...?]
 ->Answer  
 
 ==Sorry== 
- It's offly dark outside isnt it? 
-*[I guess so yeah?]
+ It's awfully dark outside, isn't it?
+*[I guess so, yeah?]
 Why are you asking these questions? 
 -> Angry
 
-*[Stop ignoring me] -> Angry 
+*[Stop ignoring me!] -> Angry 
 
 ==Angry== 
-One last question, Why are there no flowers or cards in this room? 
-*[What are you implying]
+One last question: why are there no flowers or cards in this room? 
+*[What are you implying?]
 ->Explanation
 
 *[Why does that matter?] 
 ->Explanation
 
-*[I dont know] 
+*[I don't know.] 
 ->Explanation
 
 ==Explanation== 
-Seems a little strange someone in a hospital would have no flowrs.
+Seems a little strange that someone in a hospital would have no flowers.
 *[Why are you here?]
 ->Nice 
 
@@ -83,37 +83,37 @@ Seems a little strange someone in a hospital would have no flowrs.
 -> Angry2 
 
 ==Nice== 
-Im here because there are no flowrs
+I'm here because there are no flowers.
 ->Answer
 
 ==Angry2== 
-No, but you feel hurt don't you?
+No, but you feel hurt, don't you?
 -> Answer
 
 ==Answer==
-You have to make a choice soon 
+You have to make a choice soon.
 
 
 //Entitey2
 
 Who are you?
 ~ changeEntity(2)
-    * [Im dreaming arn't I?] 
+    * [I'm dreaming, aren't I?]
     -> Dream
     * [HELP] 
         Someone get in here and help me!
         ->Scared 
-    * An owl?
+    * An owl...?
     -> Calm 
     
     == Dream ==
      No Dream 
-     * [This is just a nightmare] -> Scared  
+     * [This is just a nightmare...] -> Scared  
      * [Then what is it?] -> Explanation1
   
   
     == Scared == 
-     They all left, No one is here for you
+     They all left. No one is here for you.
      * Someone has to be here 
      -> Anger 
      * Why? 
@@ -124,7 +124,7 @@ Who are you?
     == Calm ==
        ....
    * [Why are you here?] 
-    There Must be a reason 
+    There must be a reason.
     -> Explanation1 
    * [What do you want with me?]
     What did I do? 
@@ -133,7 +133,7 @@ Who are you?
     
 
     == Explanation1 == 
-     This is not the first time you've been in a room like this
+     This is not the first time you've been in a room like this.
      * What?
         ... -> Explanation1
      * Was I sick? 
@@ -142,29 +142,29 @@ Who are you?
     
     
     == Anger ==
-    You cant hide from what you've done 
-    * [I dont Understand] 
+    You can't hide from what you've done.
+    * [I don't understand...] 
         What did I do? 
         -> Anger2
-    * [I dont know what I did] 
-        I cant even remember my name 
+    * [I don't know what I did...] 
+        I can't even remember my name...!
         -> Anger2 
         
         
         == Explanation2 ==
-        No, She was sick 
+        No. She was sick.
     * [Who?]
         Why can't you just tell me?
         -> Anger2 
-    * [I remember Somthing] 
+    * [I remember something...] 
         Her laugh 
         -> Explanation3 
         
         
         == Anger2 ==
-        You need to remember
-    * [remember what?]
-        If you know why im here just tell me?
+        You need to remember.
+    * [Remember what?]
+        If you know why I'm here, why not just tell me?!
         -> Sad
     * [Why?]
         Why do you care if I remember?
@@ -172,132 +172,132 @@ Who are you?
         
         
         == Explanation3 ==
-        Her laugh was so sweet
+        Her laugh was so sweet...
         -> Sad
         
         
         == Sad == 
-       She Misses you 
+       She misses you.
     * [Daughter]
-        I Have a daughter
+        I...have a daughter...?
         -> Sad
     * Where is she? 
-        Where are you? 
+        ...Where are you? 
         -> E3
         
         
         //Entiety3
         == E3 ==
 	~ changeEntity(3)
-        My daughter where is she? 
-    *I need to get to her 
+        My daughter. Where is she?
+    *I need to get to her.
     -> Void
-    * [Let me out] 
-        Someone, get me out of here I need to see her
+    * [Let me out!] 
+        Someone, please! Get me out of here! I need to see her!
     -> Void
     * What are you? 
     -> Void
     
     == Void ==
-    Deal, Deal, Deal 
+    DEAL, DEAL, DEAL 
     * [What?]
-        What kind of deal? 
+        ...What kind of deal?
         -> Deal
-    * [I donn't have time for this]
-        Im going to see my Daughter
+    * [I don't have time for this!]
+        I'm going to see my daughter.
         -> Agressive 
-    * [I just want to see my daughter] 
-        Shes needs someone 
+    * [I just want to see my daughter.] 
+        She needs someone!
         -> Daughter 
         
         
         == Deal ==
-        Daughter Sick, Your life, save hers 
+        DAUGHTER SICK. YOUR LIFE - SAVE HERS 
     * She can get better
     -> lie
-    * [She cant die]
-        I won't let her 
+    * [She can't die.]
+        I won't let her...
         -> lie
-    * [you're lying]
-        Shes cant be sick, shes fine. 
+    * [You're lying.]
+        She can't be sick... She's fine. 
     ->lie    
         
         
         == Agressive ==
-        daughter dead 
+        DAUGHTER DEAD 
     * [What?] 
-        She cant be dead
+        She can't be dead!
     -> lie
-    * [You're lying] 
-        You have no idea what you're talking about
+    * [You're lying.] 
+        You have no idea what you're talking about.
     -> Agressive2
-    * [BullShit]
-        You're lying, how would you know
+    * [Bullshit.]
+        You're lying. How would you know?
     ->Agressive2
         
         == Daughter ==
-        Leave not possible 
+        LEAVE NOT POSSIBLE
     * Why? 
     -> Truth
-    * It has to be 
+    * It has to be... 
     -> lie
     * What do you want with me? 
     -> Truth 
     
     
     == lie ==
-        Come back to me, save her 
-    * Theres another way 
+        COME BACK TO ME. SAVE HER 
+    * There's another way!
     -> Mad
-    * You're lying
+    * You're lying!
     -> Mad
     * [Ok]
-        If I die, youll save her? 
+        If I die...then you'll save her?
         -> lie2
     
     == Agressive2 == 
-        Cancer eating her away 
-    * Why are you doing this to me?
+        CANCER - EATING HER AWAY 
+    * Why are you doing this to me?!
     -> Truth
-    * Just let me see her
+    * Just let me see her!
     -> lie2
-    * I dont care, let me see her 
+    * I don't care! Let me see her!
     -> Mad
     
     == Truth == 
-     Cheated, Come back, Have you again 
+     CHEATED. COME BACK - HAVE YOU AGAIN
     *Why would I do that?
     -> Truth2
     * [No]
-        My daughter needs me
+        My daughter needs me.
         ->Truth2
         
         
         == Mad == 
         ONLY WAY, COME BACK, SHE DIE
-    * If I die you will save her? 
+    * If I die...then you will save her? 
     -> lie2
-    * I dont belive you
+    * I don't belive you...
     -> Truth2
         
         
         == lie2 == 
-        Your life, save her 
-    * Ok
+        YOUR LIFE - SAVE HER 
+    * ...Okay.
     -> DONE
-    * No 
+    * No...
     ->Mad
         
         
         == Truth2 == 
-    She will not live, Cancer, she is pale, come back to me 
-    * [I remember] 
-        Brain cancer but it spread fast
+    SHE WILL NOT LIVE - CANCER; SHE IS PALE 
+    * [I remember...] 
+        ...Brain cancer... It spread fast...
 
     ->Truth2
-    * Bring me to her
+    * Bring me to her.
     -> DONE
-    * I cant see her like that again
+    * I can't see her like that again...
     ->DONE
 
 
